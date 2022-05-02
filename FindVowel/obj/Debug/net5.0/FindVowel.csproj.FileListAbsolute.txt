@@ -1,0 +1,16 @@
+C:\Users\ZMan\source\repos\Training\FindVowel\bin\Debug\net5.0\FindVowel.exe
+C:\Users\ZMan\source\repos\Training\FindVowel\bin\Debug\net5.0\FindVowel.deps.json
+C:\Users\ZMan\source\repos\Training\FindVowel\bin\Debug\net5.0\FindVowel.runtimeconfig.json
+C:\Users\ZMan\source\repos\Training\FindVowel\bin\Debug\net5.0\FindVowel.runtimeconfig.dev.json
+C:\Users\ZMan\source\repos\Training\FindVowel\bin\Debug\net5.0\FindVowel.dll
+C:\Users\ZMan\source\repos\Training\FindVowel\bin\Debug\net5.0\ref\FindVowel.dll
+C:\Users\ZMan\source\repos\Training\FindVowel\bin\Debug\net5.0\FindVowel.pdb
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.csproj.AssemblyReference.cache
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.AssemblyInfoInputs.cache
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.AssemblyInfo.cs
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.csproj.CoreCompileInputs.cache
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.dll
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\ref\FindVowel.dll
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.pdb
+C:\Users\ZMan\source\repos\Training\FindVowel\obj\Debug\net5.0\FindVowel.genruntimeconfig.cache

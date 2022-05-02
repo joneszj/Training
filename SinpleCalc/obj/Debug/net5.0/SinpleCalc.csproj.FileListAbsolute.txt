@@ -1,0 +1,16 @@
+C:\Users\ZMan\source\repos\Training\SinpleCalc\bin\Debug\net5.0\SinpleCalc.exe
+C:\Users\ZMan\source\repos\Training\SinpleCalc\bin\Debug\net5.0\SinpleCalc.deps.json
+C:\Users\ZMan\source\repos\Training\SinpleCalc\bin\Debug\net5.0\SinpleCalc.runtimeconfig.json
+C:\Users\ZMan\source\repos\Training\SinpleCalc\bin\Debug\net5.0\SinpleCalc.runtimeconfig.dev.json
+C:\Users\ZMan\source\repos\Training\SinpleCalc\bin\Debug\net5.0\SinpleCalc.dll
+C:\Users\ZMan\source\repos\Training\SinpleCalc\bin\Debug\net5.0\ref\SinpleCalc.dll
+C:\Users\ZMan\source\repos\Training\SinpleCalc\bin\Debug\net5.0\SinpleCalc.pdb
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.csproj.AssemblyReference.cache
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.AssemblyInfoInputs.cache
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.AssemblyInfo.cs
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.csproj.CoreCompileInputs.cache
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.dll
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\ref\SinpleCalc.dll
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.pdb
+C:\Users\ZMan\source\repos\Training\SinpleCalc\obj\Debug\net5.0\SinpleCalc.genruntimeconfig.cache

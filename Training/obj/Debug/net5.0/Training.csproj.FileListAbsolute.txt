@@ -1,0 +1,16 @@
+C:\Users\ZMan\source\repos\Training\Training\bin\Debug\net5.0\Training.exe
+C:\Users\ZMan\source\repos\Training\Training\bin\Debug\net5.0\Training.deps.json
+C:\Users\ZMan\source\repos\Training\Training\bin\Debug\net5.0\Training.runtimeconfig.json
+C:\Users\ZMan\source\repos\Training\Training\bin\Debug\net5.0\Training.runtimeconfig.dev.json
+C:\Users\ZMan\source\repos\Training\Training\bin\Debug\net5.0\Training.dll
+C:\Users\ZMan\source\repos\Training\Training\bin\Debug\net5.0\ref\Training.dll
+C:\Users\ZMan\source\repos\Training\Training\bin\Debug\net5.0\Training.pdb
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.csproj.AssemblyReference.cache
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.AssemblyInfoInputs.cache
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.AssemblyInfo.cs
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.csproj.CoreCompileInputs.cache
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.dll
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\ref\Training.dll
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.pdb
+C:\Users\ZMan\source\repos\Training\Training\obj\Debug\net5.0\Training.genruntimeconfig.cache
