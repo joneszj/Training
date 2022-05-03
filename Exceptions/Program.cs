@@ -13,9 +13,14 @@ namespace Exceptions
             #region Exceptions
             Console.WriteLine("Hello World! Lets explore exceptions");
             // an exception is an unexpected error that occurs in your application
-            // we can try/catch exceptions to prevent the application from stopping or log the exception, or provide validation, etc.
+            // we can try/catch exceptions to prevent the application from stopping or log the exception etc.
+            // in general, exceptions should not be used in place of validation.
+            // Excpetions are meant to be unexpected. Validation errors should be managed by engineers (using tools such as TryParse)
+            // Exception handling gives us a means of catch exceptions, and gracefully handling them.
+            // So, instead of an application crash, we can let the user know that something went wrong, log our exceptions, etc.
 
-            // numpers cannot be divided by 0, if we try to, an exception will be thrown (DivideByZeroException)
+            // numbers cannot be divided by 0, if we try to, an exception will be thrown (DivideByZeroException)
+            // (keyboard try + tab + tab)
             try
             {
                 var number = 10;
@@ -23,7 +28,7 @@ namespace Exceptions
             }
             catch (Exception ex)
             {
-                // the caught expection is an object. It has properties such as Message, and InnerException
+                // the variable ex here is an instance of Exception (we can name it whatever we like. It has properties such as Message, and InnerException
                 Console.WriteLine(ex.Message);
                 // throw; // throw, throws the exception and stops our application. We can comment it out or remove it to allow the application to continue
             }
@@ -40,7 +45,8 @@ namespace Exceptions
 
             try
             {
-                // we can even use the basic exception and pass our own message
+                // we can even use the basic exception class constructor and pass our own message
+                // the constructor is the () after the class name, we will cover these in detail later
                 throw new Exception("I made this.");
             }
             catch (Exception)
@@ -91,7 +97,7 @@ namespace Exceptions
             }
 
             // finally, exceptions in general should be closest to the output of your application
-            // the deeper exception handling is, the harder your code is to maintain and your code become prone to try/catch logic 
+            // the deeper exception handling is, the harder your code is to maintain and your code become prone to try/catch logic 'code smell'
             #endregion
         }
     }
