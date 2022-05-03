@@ -7,7 +7,12 @@ namespace _05_Collections
     {
         static void Main(string[] args)
         {
+            // Collections is a term I use to describe any data structute that may have multiple independant values
+            // But others user other terms: series, sequence, etc.
+            // There are many forms of collections in .Net, but here we will cover just a few
+
             #region Arrays
+            // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
             // Arrays are data structures where you can store many values inside of it
             // The Array class is abstract, meaning you cannot create an instance of the Array type (ex new Array())
             // Arrays require a type declaration, which indicates the type of the values in the array
@@ -84,6 +89,7 @@ namespace _05_Collections
             #endregion
 
             #region Generic Lists
+            // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections
             // Lists are functionally superior to arrays, but they have an added performance cost. With modern hardware, this performance cost is often safely ignored
             // But it is work noting that if you have really large collections to manipulate, arrays will perform better, especially if the size of the collection is constant
 
@@ -114,18 +120,60 @@ namespace _05_Collections
             #region Dictionaries
             // Dictionaries are simply typed key-value pairs
             Dictionary<string, int> myDictionary = new Dictionary<string, int>();
-            // the left type parameter is the key, the right is the value
+            // The left type parameter is the key, the right is the value
             myDictionary.Add("Noon", 12);
             myDictionary.Add("Midnight", 24);
+
+            // You can get a value by passing a key into the Dictionaries indexr
+            var item = myDictionary["Noon"];
+
+            // You can find, add, remove, etc. on Dictionaries, but the keys must always be unique
+            // Like Lists, Dictionaries have no static methods, only instanced methods
 
             #endregion
 
             #region IEnumerable
+            // TODO: this will be covered in a later lesson, but these links provide a lot of technical context on various types of collections
+            // IEnumerable: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-6.0#remarks
+            // ICollection: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1?view=net-6.0#remarks
+            // IDictionary: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2?view=net-6.0#remarks
+            // IList: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1?view=net-6.0#remarks
 
+            // For a list of all generic collections: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic?view=net-6.0
             #endregion
 
             #region ForEach
+            // ForEach is by far the most commonly used iteration constuct, and it will work for any IEnumerable type instance
+            var statements = new string[] { "hello", "bye bye", "have a nice day", "nice to meet you" };
+            // (keyboard foreach tab + tab)
+            // foreach (var itemInIteration in collectionToIterate)
+            // each item in the collection will automatically be passed into the var declared in the foeach expression
+            foreach (var statement in statements)
+            {
+                Console.WriteLine(statement);
+            }
 
+            var questions = new List<string> { "how are you?", "What did you do today?", "how is your family" };
+            foreach (var question in questions)
+            {
+                Console.WriteLine(question);
+            }
+
+            foreach (var dictionaryItem in myDictionary)
+            {
+                Console.WriteLine($"{dictionaryItem.Key} = {dictionaryItem.Value}");
+            }
+
+            // ForEach iteration loops are very simple and powerful
+            // If you have no need to maintain an index value, ForEach is likely the way to go when iterating on collections
+
+            // This may help you identify which loop fits best in your scenario:
+            // If I cannot use the LinQ .ForEach(), I will use the construct ForEach
+            // If I need an index, or am concerned about performance, a for/forr may be used
+            // If the loop termination is not determined, a while loop can be used
+            // If I need the while loop to occur at least once, I will use the doWhile
+
+            // 90%+ of the time, especially in web development, the go to iteation construct is ForEach and the LinQ .ForEach()
             #endregion
 
             #region Deep Dive

@@ -58,6 +58,18 @@ namespace _03_Parsing
             // Manual parsing hasn't been super common for me. Most frameworks will deserialize incoming strings into the type they belong to
             // However, for Console applicaitons, all we has is the user input string or char, so parsing happens more frequently
             #endregion
+
+            #region Practice
+            // Create a Console Application and practice parsing
+            // Parsing is great for user input validation
+
+            // Create a simple 10 question math quiz where you will track a count of incorrect and correct answers
+            // Ask the question, store the answer, keep track of the counts, display the counts after the quiz is finished
+                // Unlike the previous math quiz, use parsing to validate user inputs as proper answer values (ints, floats, etc)
+                // If the parse fails, let the user know that the input was invalid and the answer will be considered incorrect
+                    // Later, when we touch on loops and iteration, we can easily implement a try again feature
+                    // But for now, simply mark the answer invalid and incorrect and move to the next question
+            #endregion
         }
     }
 }

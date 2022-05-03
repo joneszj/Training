@@ -61,6 +61,24 @@ namespace Training
             // https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names
             // https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
             #endregion
+
+            #region Helpful Shortcuts
+            // ctrl + k + d will format your file
+            // ctrl + shift + s will save all open tabs
+            // ctrl + tab or strl + shift + tab will allow you to navigate open tabls
+            // ctrl + q will open the search (at the top)
+            // ctrl + f will open find
+            // ctrl + shift + f will open find all
+            // ctrl + h will open replace
+            // ctrl + shift + h will open replace all
+            // when renaming things, its usually best to just r-click the thing, select rename, and VS will automatically update all isntances of that thing
+            // ctrl + b will build the current project
+            // ctrl + shift + b will build all projects
+            // f5 will run the current project with debugging on
+            // ctrl + k + s will open the surround context menu (it is how I make the #regions)
+            // ctrl + k + k will toggle a bookmark on the current line
+            // f9 will insert a breakpoint on the current line
+            #endregion
         }
     }
 }

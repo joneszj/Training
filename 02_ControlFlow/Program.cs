@@ -63,6 +63,10 @@ namespace _02_ControlFlow
             else Console.WriteLine("Hmmm.... Lets do something else.");
             // notice, single line if/else code blocks do not need brackets
             // this will do exactly what the switch above does
+
+            // If it is easier to write the if statement first, you can use intellisence (ctrl + .)
+            // select the if/else code, ctrl + ., convert to switch
+            // But in my experience, if/else statements are preferred, regardless the potential performance hit
             #endregion
 
             #region Nesting
@@ -87,6 +91,18 @@ namespace _02_ControlFlow
             // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/equality-operators
             // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements
             // https://zetcode.com/lang/csharp/flowcontrol/
+            #endregion
+
+            #region Practice
+            // Create a Console Application and practice creating and managing control flow constructs
+            // Understand comparion operators and the bool data type
+            // Ask the user questions, store their response into variables and branch from those inputs
+            // Ask follow up questions for each branch, etc.
+
+            // Create a simple 10 question math quiz where you will track a count of incorrect and correct answers
+            // Ask the question, store the answer, keep track of the counts, display the counts after the quiz is finished
+                // To complete this using ints, you may want to read up on Parsing.
+                // Otherwise, since ReadLine() returns a string, you could simply compare string to string for now
             #endregion
         }
     }

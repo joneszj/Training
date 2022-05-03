@@ -12,25 +12,34 @@ namespace Palindrome
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a word and we will identify if it is a palendrome!");
-            do
+            try
             {
-                Console.WriteLine();
-                var word = Console.ReadLine();
-
-                // LinQ
-                // Console.WriteLine(word == new string(word.Reverse().ToArray()));
-
-                // non-LinQ
-                var stringReversed = "";
-                for (int i = word.Length - 1; i >= 0; i--)
+                Console.WriteLine("Enter a word and we will identify if it is a palendrome!");
+                do
                 {
-                    stringReversed += word[i];
-                }
-                Console.WriteLine(word == stringReversed);
+                    Console.WriteLine();
+                    var word = Console.ReadLine();
 
-                Console.WriteLine("Continue?");
-            } while (Console.ReadKey().Key == ConsoleKey.Y);
+                    // LinQ
+                    // Console.WriteLine(word == new string(word.Reverse().ToArray()));
+
+                    // non-LinQ
+                    var stringReversed = "";
+                    for (int i = word.Length - 1; i >= 0; i--)
+                    {
+                        stringReversed += word[i];
+                    }
+                    Console.WriteLine(word == stringReversed);
+
+                    Console.WriteLine("Continue?");
+                } while (Console.ReadKey().Key == ConsoleKey.Y);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Uh oh! Something went wrong :(");
+                Console.WriteLine(ex.Message);
+                throw;
+            }
         }
     }
 }

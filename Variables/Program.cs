@@ -60,7 +60,7 @@ namespace Variables
             // var myBool = 2; 
             #endregion
 
-            #region Using Variables
+            #region Using Variables in the Console
             // Variables are used to stare data/state. Lets ask the user their name, then store that into a variable, then output that variable
             Console.WriteLine("What is your name"); // <- output
             var userName = Console.ReadLine(); // <- input
@@ -102,6 +102,19 @@ namespace Variables
             #region Deep Dive
             // https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/
             // https://www.bestprog.net/en/2016/08/08/02-base-types-values-types-in-c/#q_01
+            #endregion
+
+            #region Practice
+            // Create a Console Application and practice creating and managing variables
+            // Understand what variable declaration and initialization is
+            // Assign uninitialized variables and reassign existing variables
+            // Explore the instance methods of various base data type instances
+            // Explore the static methods of various base data types
+            
+            // Practice outputing text to the console with the Write and WriteLine statis methods
+            // Practice storing input from the console from the ReadlLine and ReadKey static methods
+            // Practice outputing variables you create and alter to the console
+            // Understand, at least functionally, what concatonation is as well as interpolation
             #endregion
         }
     }
