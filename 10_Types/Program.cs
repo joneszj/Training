@@ -29,6 +29,9 @@ namespace _10_Types
             lexus.Model = "ES300";
             lexus.Year = 1999;
 
+            // An unintialized class will always be null until assigned
+            Car bMW;
+
             // the honda and lexus are both instance of type Car
             // Car is a class. Classes are the most common type you will likely interact with, but there others and we should be familiar with them 
             #endregion
