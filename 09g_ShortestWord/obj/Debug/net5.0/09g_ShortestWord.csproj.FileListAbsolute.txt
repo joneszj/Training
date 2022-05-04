@@ -1,0 +1,16 @@
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestWord.exe
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestWord.deps.json
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestWord.runtimeconfig.json
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestWord.runtimeconfig.dev.json
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\ref\09g_ShortestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestWord.pdb
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.csproj.AssemblyReference.cache
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.AssemblyInfoInputs.cache
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.AssemblyInfo.cs
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.csproj.CoreCompileInputs.cache
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\ref\09g_ShortestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.pdb
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestWord.genruntimeconfig.cache

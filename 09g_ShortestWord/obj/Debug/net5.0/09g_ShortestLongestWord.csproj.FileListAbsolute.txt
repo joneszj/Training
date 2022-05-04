@@ -1,0 +1,15 @@
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestLongestWord.exe
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestLongestWord.deps.json
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestLongestWord.runtimeconfig.json
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestLongestWord.runtimeconfig.dev.json
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestLongestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\ref\09g_ShortestLongestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\bin\Debug\net5.0\09g_ShortestLongestWord.pdb
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestLongestWord.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestLongestWord.AssemblyInfoInputs.cache
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestLongestWord.AssemblyInfo.cs
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestLongestWord.csproj.CoreCompileInputs.cache
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestLongestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\ref\09g_ShortestLongestWord.dll
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestLongestWord.pdb
+C:\Users\ZMan\source\repos\Training\09g_ShortestWord\obj\Debug\net5.0\09g_ShortestLongestWord.genruntimeconfig.cache
