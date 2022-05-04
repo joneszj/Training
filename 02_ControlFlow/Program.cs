@@ -100,7 +100,7 @@ namespace _02_ControlFlow
             // Ask follow up questions for each branch, etc.
 
             // Create a simple 10 question math quiz where you will track a count of incorrect and correct answers
-            // Ask the question, store the answer, keep track of the counts, display the counts after the quiz is finished
+            // Ask the question, store the answer, keep track of the score, display the score after the quiz is finished
                 // To complete this using ints, you may want to read up on Parsing.
                 // Otherwise, since ReadLine() returns a string, you could simply compare string to string for now
             #endregion
