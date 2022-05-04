@@ -9,7 +9,7 @@ namespace _10_Types
             // https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/
             #region Types
             // What are types?
-            // We can define a type as a blueprint that defines somethings state and behavior
+            // We can define a type as a blueprint that defines what something is and its state and behavior
             // If we think of what a car might be in code, we can map out its state and behavior
             // It has wheels, a passenger count, a break to slow down, a gas peddle to accelorate, etc.
             // Look at the class Car (below) to see how we can build this in code
