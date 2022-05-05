@@ -93,7 +93,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Test Driven Development"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Entity Framework", "07 Entity Framework", "{E02CABE3-2C16-43B6-90E8-2680F0B844BC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 Web Frameworks", "08 Web Frameworks", "{4C6AB976-838A-4D95-A034-1CB3407E80EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 Web Frameworks", "09 Web Frameworks", "{4C6AB976-838A-4D95-A034-1CB3407E80EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 MVC", "02 MVC", "{2EDB1B57-77A4-48E1-9A3A-36D9A4A544EE}"
 EndProject
@@ -114,6 +114,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Generics", "04 Generics", "{FE5002A5-A259-4569-B665-2969C529A37D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Version Control", "06 Version Control", "{3999FDC2-172B-4317-8E35-3D5E35C31C07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 Single Page Applications", "11 Single Page Applications", "{D2059413-321F-4CE7-AEA9-6B6B7C5EB293}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 HTML, CSS", "08 HTML, CSS", "{AE958141-5A7A-438F-A0CD-46ED0BD16A30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Javascript, Typescript", "10 Javascript, Typescript", "{F209C5D7-C060-4DCE-9890-9964C0336D71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
