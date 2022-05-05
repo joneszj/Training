@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\09g_ShortestWord\\09g_ShortestLongestWord.csproj",
-      "projectName": "09g_ShortestLongestWord",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\09g_ShortestWord\\09g_ShortestLongestWord.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\09g_ShortestWord\\08_ShortestLongestWord.csproj",
+      "projectName": "08_ShortestLongestWord",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\09g_ShortestWord\\08_ShortestLongestWord.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\09g_ShortestWord\\obj\\",
       "projectStyle": "PackageReference",

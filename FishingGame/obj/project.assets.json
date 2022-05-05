@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\FishingGame\\09e_FishingGame.csproj",
-      "projectName": "09e_FishingGame",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\FishingGame\\09e_FishingGame.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\FishingGame\\06_FishingGame.csproj",
+      "projectName": "06_FishingGame",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\FishingGame\\06_FishingGame.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\FishingGame\\obj\\",
       "projectStyle": "PackageReference",

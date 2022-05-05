@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\SinpleCalc\\09f_SimpleCalc.csproj",
-      "projectName": "09f_SimpleCalc",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\SinpleCalc\\09f_SimpleCalc.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\SinpleCalc\\07_SimpleCalc.csproj",
+      "projectName": "07_SimpleCalc",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\SinpleCalc\\07_SimpleCalc.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\SinpleCalc\\obj\\",
       "projectStyle": "PackageReference",

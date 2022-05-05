@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\FindVowel\\09b_FindVowel.csproj",
-      "projectName": "09b_FindVowel",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\FindVowel\\09b_FindVowel.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\FindVowel\\03_FindVowel.csproj",
+      "projectName": "03_FindVowel",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\FindVowel\\03_FindVowel.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\FindVowel\\obj\\",
       "projectStyle": "PackageReference",

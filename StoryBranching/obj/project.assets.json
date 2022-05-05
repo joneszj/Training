@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\StoryBranching\\09a_StoryBranching.csproj",
-      "projectName": "09a_StoryBranching",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\StoryBranching\\09a_StoryBranching.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\StoryBranching\\02_StoryBranching.csproj",
+      "projectName": "02_StoryBranching",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\StoryBranching\\02_StoryBranching.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\StoryBranching\\obj\\",
       "projectStyle": "PackageReference",

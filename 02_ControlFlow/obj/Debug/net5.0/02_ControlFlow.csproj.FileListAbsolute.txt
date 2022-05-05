@@ -5,7 +5,6 @@ C:\Users\ZMan\source\repos\Training\02_ControlFlow\bin\Debug\net5.0\02_ControlFl
 C:\Users\ZMan\source\repos\Training\02_ControlFlow\bin\Debug\net5.0\02_ControlFlow.dll
 C:\Users\ZMan\source\repos\Training\02_ControlFlow\bin\Debug\net5.0\ref\02_ControlFlow.dll
 C:\Users\ZMan\source\repos\Training\02_ControlFlow\bin\Debug\net5.0\02_ControlFlow.pdb
-C:\Users\ZMan\source\repos\Training\02_ControlFlow\obj\Debug\net5.0\02_ControlFlow.csproj.AssemblyReference.cache
 C:\Users\ZMan\source\repos\Training\02_ControlFlow\obj\Debug\net5.0\02_ControlFlow.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ZMan\source\repos\Training\02_ControlFlow\obj\Debug\net5.0\02_ControlFlow.AssemblyInfoInputs.cache
 C:\Users\ZMan\source\repos\Training\02_ControlFlow\obj\Debug\net5.0\02_ControlFlow.AssemblyInfo.cs

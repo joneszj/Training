@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\Palindrome\\09d_Palindrome.csproj",
-      "projectName": "09d_Palindrome",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\Palindrome\\09d_Palindrome.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\Palindrome\\05_Palindrome.csproj",
+      "projectName": "05_Palindrome",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\Palindrome\\05_Palindrome.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\Palindrome\\obj\\",
       "projectStyle": "PackageReference",

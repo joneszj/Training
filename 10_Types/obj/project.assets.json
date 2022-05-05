@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\10_Types\\10_Types.csproj",
-      "projectName": "10_Types",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\10_Types\\10_Types.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\10_Types\\01_Types.csproj",
+      "projectName": "01_Types",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\10_Types\\01_Types.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\10_Types\\obj\\",
       "projectStyle": "PackageReference",

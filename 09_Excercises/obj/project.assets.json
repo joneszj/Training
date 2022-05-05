@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\09_Excercises\\09_Excercises.csproj",
-      "projectName": "09_Excercises",
-      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\09_Excercises\\09_Excercises.csproj",
+      "projectUniqueName": "C:\\Users\\ZMan\\source\\repos\\Training\\09_Excercises\\01_Excercises.csproj",
+      "projectName": "01_Excercises",
+      "projectPath": "C:\\Users\\ZMan\\source\\repos\\Training\\09_Excercises\\01_Excercises.csproj",
       "packagesPath": "C:\\Users\\ZMan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZMan\\source\\repos\\Training\\09_Excercises\\obj\\",
       "projectStyle": "PackageReference",
