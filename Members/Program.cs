@@ -7,7 +7,7 @@ namespace Members
         static void Main(string[] args)
         {
             // https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/program-building-blocks
-            // A member is a general term refering to any thing that is on a class
+            // A member is a general term refering to anything that is on a class
 
             #region Static vs Instance
             // Members may be static or instanced
