@@ -60,7 +60,7 @@ namespace NullCheck
             }
 
             Console.WriteLine("\nobjects collection");
-            var objects = new List<object> { "", 1, null, string.Empty  };
+            var objects = new List<object> { "", 1, null, string.Empty };
             foreach (var obj in objects)
             {
                 if (obj == null)
