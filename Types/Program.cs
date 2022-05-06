@@ -11,9 +11,9 @@ namespace Types
             // What are types?
             // We can define a type as a blueprint that defines what something is and its state and behavior
             // If we think of what a car might be in code, we can map out its state and behavior
-            // It has wheels, a passenger count, a break to slow down, a gas peddle to accelorate, etc.
+            // It has wheels, a passenger count, a break to slow down, a gas peddle to accelerate, etc.
             // Look at the class Car (below) to see how we can build this in code
-            // We defines state are properties, and the behavior as methods
+            // We define state as properties, and the behavior as methods
             // The class is just a blueprint; a design. If we want an instance of a Car type, we would use the new keywaord
             var honda = new Car();
             // we can set properties on our instance and call methods easily
@@ -40,7 +40,7 @@ namespace Types
             // What are type members? State/Behavior?
             // Members are any state or behavior of a type
             // Type is what the thing is
-            // State defines a type has
+            // State defines what a type has
             // Behavior defines what a type does
 
             // State is often defined using properties
@@ -65,7 +65,7 @@ namespace Types
             // Types allow us to engineer and organize our application by defining types (objects) that have state and behavior
         }
 
-        public class Car
+        class Car
         {
             public string Make { get; set; }
             public string Model { get; set; }
@@ -75,11 +75,11 @@ namespace Types
             /// </summary>
             public int Wheels { get; set; } = 4;
             /// <summary>
-            /// Count of maximum capacity
+            /// Count of maximum capacity, default to 5
             /// </summary>
-            public int Capacity { get; set; }
+            public int Capacity { get; set; } = 5;
             /// <summary>
-            /// Coount of passengers including driver
+            /// Count of current passengers including driver
             /// </summary>
             public int Passengers { get; set; }
             /// <summary>
