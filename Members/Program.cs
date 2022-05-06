@@ -38,12 +38,13 @@ namespace Members
         class MyClass
         {
             // A default constructor (ctor + tab + tab)
+            // A default constructor is always present on a class unless an custom/overload constructor is present
             public MyClass()
             {
 
             }
 
-            // A constructor with a required paremeter
+            // An overloaded constructor with a required paremeter
             public MyClass(int fieldNumber)
             {
                 // set this instances myField
