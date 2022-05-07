@@ -14,13 +14,13 @@ namespace LinQInDepth
 
             #region Yield
             // yield will return to the calling iteration a single instance of a collection, while maintaining the state of the iteration
-            // when the iteration continues, yield will remember where it left of and repeat
+            // when the iteration continues, yield will remember where it left off and repeat
             // it maintains a state machine that manages the iteration state without needing to construct a separate class to maintain this state
 
             // for example, lets suppose we have a collection of ints that we want to square each of them and return the squared results in a new collection
             var ints = new int[] { 1, 2, 3, 4, 5, 6 };
-            var squares = new int[ints.Length - 1];
-            for (int i = 0; i < ints.Length; i++)
+            var squares = new int[ints.Length];
+            for (int i = 0; i < ints.Length - 1; i++)
             {
                 squares[i] = ints[i] * ints[i];
             }
@@ -47,7 +47,7 @@ namespace LinQInDepth
                 // in this use case, the entire largeCollection must complete and return before we can begin operating against it
             }
 
-            // now lets use the yield keyword. I implemented a static YieldRange, that accepts a start and end int, as well as a delegate (indicating the expensive operation)
+            // now lets use the yield keyword. YieldRange, accepts a start and end int
             IEnumerable<int> YieldRange(int start, int end)
             {
                 for (int i = start; i < end; i++)
@@ -110,6 +110,29 @@ namespace LinQInDepth
             // T is the generic type to be operated on, TResult is the generic return type
             // In the case of IQueriable, the items are not yielded until the collection is projected to an IEnumerable (.ToList for example)
 
+            Enumerable.Range(1, 10).Select(e =>
+            {
+                Console.WriteLine("***start");
+                Console.WriteLine("select: 1 value:" + e);
+                return e;
+            }).Select(e =>
+            {
+                Console.WriteLine("select: 2 value:" + e);
+                return e;
+            }).Where(e => e % 2 == 0)
+            .Select(e =>
+            {
+                Console.WriteLine("even" + e);
+                return e;
+            }).Select((e, i) => {
+                Console.WriteLine("select: 3 value:" + e);
+                return e;
+            }).ToList();
+            // the above will not work in Linq-to-Entities as the lambda expression cannot be converted into SQL for the SQL provider
+            // but I suspect the same flow would occur except that the data source is called once
+            // to the db call happens (deferred execution), setting the IEnumerable source, and then the iteration yielding happens
+            // https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/query-execution
+            // https://www.dotnetcurry.com/csharp/1481/linq-query-execution-performance
         }
 
         delegate int PerformCalculation(int x);

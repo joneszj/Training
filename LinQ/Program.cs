@@ -35,8 +35,10 @@ namespace LinQ
 
             // https://github.com/dotnet/try-samples/tree/main/101-linq-samples
 
+            // Possible excercises
+            // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq
 
-            // exelent read:
+            // excelent read:
             // https://docs.microsoft.com/en-us/dotnet/csharp/linq/linq-in-csharp
 
             // most everyone uses method syntax: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq
