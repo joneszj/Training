@@ -25,7 +25,7 @@ namespace Interface
             // Notice this list is of IMakeSound, not the concrete types the dog, robotDog and human are
             foreach (var item in new List<IMakeSound> { dog, robotDog, human })
             {
-                // because both dog and robotDog implement the IMakeSound interface, we can treat them as the same type as defined by the interface
+                // because both dog, human and robotDog implement the IMakeSound interface, we can treat them as the same type as defined by the interface
                 // they each may have their own distinct implementation details, but the interface allows us to group them on shared features the classes must implement
                 Console.WriteLine(item.MakeSound());
                 // When we do this, we loose the non-inteface api for the type, but we can get that back if needed like so
