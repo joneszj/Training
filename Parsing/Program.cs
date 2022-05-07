@@ -9,13 +9,13 @@ namespace Parsing
             // Pasring is simply a means of extracting a value of a non-string type, from a string
 
             #region Parse
-            var parseAsInt = int.Parse("12345");
+            int parseAsInt = int.Parse("12345");
             // ^ parseAsInt will be an int of 12345
-            var parseAsBool = bool.Parse("true");
+            bool parseAsBool = bool.Parse("true");
             // ^ parseAsInt will be a bool of true
-            var parseAsFloat = float.Parse("132.14");
+            float parseAsFloat = float.Parse("132.14");
             // ^ parseAsInt will be a float of 132.14
-            var parseAsChar = char.Parse("T");
+            char parseAsChar = char.Parse("T");
 
             // If a normal parse fails to parse, it will throw an exception
             // var thisWillThrow = int.Parse("ABKDFJH#$#2NF4325464"); <- this is obviously not an int, and Parse will throw trying to parse the string as an int

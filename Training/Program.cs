@@ -64,6 +64,8 @@ namespace Training
             // https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
             #endregion
 
+            // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/statement-keywords
+
             #region Helpful Shortcuts
             // ctrl + k + d will format your file
             // ctrl + shift + s will save all open tabs
