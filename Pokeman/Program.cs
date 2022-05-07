@@ -115,7 +115,6 @@ namespace Pokeman
                     #region Battle Engine
                     do
                     {
-                        // battle engine
                         #region Player Attack
                         if (hp <= 0)
                         {
@@ -153,7 +152,6 @@ namespace Pokeman
                         #endregion
                         #endregion
                         #region Monster Attack
-                        // monster turn
                         if (monsterHp <= 0)
                         {
                             Console.WriteLine("Monster is k/o'd");
@@ -180,6 +178,7 @@ namespace Pokeman
                             hp -= monsterDamage;
                             Console.WriteLine($"The monster does {monsterDamage} damage!");
                         }
+                        #endregion
 
                         #region Report
                         Console.BackgroundColor = ConsoleColor.DarkBlue;
@@ -202,13 +201,12 @@ namespace Pokeman
                             Console.BackgroundColor = ConsoleColor.Black;
                         }
                         #endregion
-                        #endregion
-
 
                     } while (!giveUp && !playerKo && monsterHp > 0);
                     #endregion
                 } while (!giveUp && !playerKo && victories < 3);
 
+                #region Training Complete
                 Console.BackgroundColor = ConsoleColor.Yellow;
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 switch (hp)
@@ -219,7 +217,8 @@ namespace Pokeman
                     default:
                         Console.WriteLine("Your Pokeman has given up. Try again later...");
                         break;
-                }
+                } 
+                #endregion
             }
             catch (Exception ex)
             {
