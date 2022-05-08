@@ -40,6 +40,12 @@ namespace CashMart
                     IEnumerable<Shopper> shoppers = Shopper.CreateShoppers(rng.Next(0, 10))
                         .Select(e => e.GoShopping(rng, market));
 
+                    // Notice: Createshoppers and GoShopping execution is deferred until we start enumerating
+                    foreach (var item in shoppers)
+                    {
+
+                    }
+
                     // end turn
                     Console.ReadKey(true);
                 } while (!market.Bankrupt);

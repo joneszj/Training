@@ -152,6 +152,10 @@ namespace GenericCollections
 
             // Most of the time, especially in web development, the go to iteation construct is ForEach and the LinQ .ForEach()
             // As wed development typically is handling enumerable types pass from/to the server
+
+            // Whenever working with an IEnumerable, try to use the foreach enumeration instead of the for iteration
+            // as to use the for, you will need to reference the .Count() on the IEnumerable, which will count every item each iteration
+            // Or, convert the IEnumerable to an array before doing the for loop if you need to
             #endregion
 
             #endregion
@@ -216,6 +220,10 @@ namespace GenericCollections
             // All System.Collection.Generic classes implement ICollection<T>
             // IList<T> extends ICollection<T> with Instert/RemoveAt and indexing
             // IDictionary<T> extends ICollection<T> with Add(TKey, TValue), ContainsKey(TKey), TryGetValue(TKey, TValue)
+
+            // Rule of thumb:
+            // If you are in control of the type, and do not need more than simple enumeration on a mutable, fixed-size collection, an array is adequate
+            // If you need any functionality beyond that, it is best to avoid arrays and to use a construct from the System.Collections.Generic namespace
             #endregion
             #endregion
 
