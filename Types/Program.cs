@@ -58,6 +58,8 @@ namespace Types
 
             // What are the built in value types? https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#value-types
             // What are the built in reference types? https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#reference-types 
+            // assumption: all value types are structs except enums and tuples (value tuples)
+                // (not to be confused with the Tuple class) https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples#tuples-vs-systemtuple
             #endregion
 
             // We have worked exclusively with built-in types, but most complex applications will use custom/complex types like Car

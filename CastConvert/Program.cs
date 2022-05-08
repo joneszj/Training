@@ -35,6 +35,7 @@ namespace CastConvert
             // Conversions are performed on the static Convert class
             // Convert is a bit more expensive than cast, but both have their nuances (see the link above)
             var convertedInt = Convert.ToInt32("123");
+            var convertedBool = Convert.ToBoolean(1);
             // One cannot convert an enum value to an int, it basically provides conversion for base data types
             #endregion
 

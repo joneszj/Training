@@ -11,6 +11,7 @@ namespace Null
 
             #region What is null
             // What is null? null means nothing; no value. A variable that is null represents a variable that is nothing
+            // null isn't even a class or object of nothing, it is nothing
 
             // What can be null?
             // All reference types default value is null

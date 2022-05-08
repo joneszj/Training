@@ -6,6 +6,8 @@ namespace Tuple
     {
         static void Main(string[] args)
         {
+
+            // http://mustoverride.com/tuples_structs/
             Console.WriteLine("Hello World!");
         }
     }
