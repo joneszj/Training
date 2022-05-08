@@ -8,12 +8,15 @@ namespace LinQ
     {
         static void Main(string[] args)
         {
+            #region LinQ Intro
             // It is difficult to bring up collections without mentioning Language Integrated Query (LinQ)
             // LinQ provides a common, elegant, and performant means to working with collections
             // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/
             // https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/working-with-linq
             // Need to filter, order, group, join, select (project/transform/map)? https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/basic-linq-query-operations
+            #endregion
 
+            #region Examples
             var groceryList = new List<string> { "Carrot", "Meat", "Potato", "Milk", "Water", "Apple" };
 
             var firstInstance = groceryList.FirstOrDefault(e => e == "Milk");
@@ -22,18 +25,20 @@ namespace LinQ
             // null
             var conatinsLetterO = groceryList.Where(e => e.Contains('o'));
             // new list of string { Carrot, Potato }
-            var projection = groceryList.Select(e =>  "Red " + e);
+            var projection = groceryList.Select(e => "Red " + e);
             // new list of string where all values are prepended with "Red "
             var ordered = groceryList.OrderBy(e => e);
             var orderedDescending = groceryList.OrderByDescending(e => e);
-            
-            groceryList.ForEach(e => { 
+
+            groceryList.ForEach(e =>
+            {
                 // will run for each item in the collection, and pass the item into the variable we called e
             });
 
             var addedList = groceryList.Concat(new List<string> { "Orange", "Pinapple" });
 
             // https://github.com/dotnet/try-samples/tree/main/101-linq-samples
+            #endregion
 
             // Possible excercises
             // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq

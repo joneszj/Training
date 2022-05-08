@@ -14,18 +14,16 @@ namespace FindVowel
         {
             try
             {
-                Console.WriteLine("Enter a word and we will count the vowels (not including y and don't display vowels not found)!");
+                Console.WriteLine("Enter a word and we will count the vowels (not including y and don't display vowels not found)!\n");
                 do
                 {
-                    Console.WriteLine();
-
                     // LinQ
-                    //Console.ReadLine().Where(e =>
-                    //    char.ToLower(e) == 'a' ||
-                    //    char.ToLower(e) == 'e' ||
-                    //    char.ToLower(e) == 'i' ||
-                    //    char.ToLower(e) == 'o' ||
-                    //    char.ToLower(e) == 'u')
+                    //Console.ReadLine().ToLower().Where(e =>
+                    //    e == 'a' ||
+                    //    e == 'e' ||
+                    //    e == 'i' ||
+                    //    e == 'o' ||
+                    //    e == 'u')
                     //    .GroupBy(e => e)
                     //    .ToList().ForEach(e => Console.WriteLine($"{e.Key}: {e.Count()}"));
 

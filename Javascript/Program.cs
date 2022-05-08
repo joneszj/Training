@@ -1,18 +1,12 @@
 ﻿using System;
 
-namespace Enum
+namespace Javascript
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // Enum
             Console.WriteLine("Hello World!");
-        }
-
-        enum MyEnum
-        {
-
         }
     }
 }

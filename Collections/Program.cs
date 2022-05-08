@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 
 namespace Collections
 {
@@ -7,177 +7,148 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            // Collections is a term I use to describe any data structute that may have multiple independant values
+            // This is very technical, and not super relavent for modern C# development
+            // Noone uses the non-generic collections anymore (System.Collections namespace)
+            // But to understand generic collections (System.Collections.Generic namespace) we need to understand the non-generic collections
+
+            // Collections is a term I use to describe any data structute that may have multiple independant values that can be iterated or enumerated over
             // But others user other terms: series, sequence, etc.
             // There are many forms of collections in .Net, but here we will cover just a few
 
             #region Arrays
-            // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
-            // Arrays are data structures where you can store many values inside of it
-            // The Array class is abstract, meaning you cannot create an instance of the Array type (ex new Array())
-            // Arrays require a type declaration, which indicates the type of the values in the array
-            // Like variables, you cannot mix ot change the type once it is declared
-            var myStringArray = new string[] { };
-            // ^ is a empty string array. You may also create one like this
-            string[] myOtherStringArray = new string[] { };
-            // You can also initialize an array
-            var myInitializedArray = new int[] { 0, 1, 2, 3, 5, 8, 13, 21 };
-            // myInitializedArray has the values 0, 1, 2, 3, 5, 8, 13, 21
+            // The Array structure is strange. It implements the non-generic and generic implementations of IEnumerable, ICollection, and IList
+            // It injects IEnumerable<T>, ICollection<T>, and IList<T> at build-time
+            // https://stackoverflow.com/questions/14324987/why-isnt-array-a-generic-type
 
-            // Arrays are 0 index, meaning the first position of the array is 0, the next is 1, next is 2, and so on.
-            // We can read values from an array using it index
-            // We simply pass the index as an int into the array indexer syntax ([])
-            var intPoition4 = myInitializedArray[4];
-            // intPoition4 = index position 4 is value 5, so intPoition2 is 5
+            // The Array class (System namespace) is akin to the String class (System namespace) for string, but the Array class is abstract, and cannot be derived
+            // Nor does it have a public default constructor or any other public constructor
+            // https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-6.0#remarks
+            // The Array class is the base class for language implementations that support arrays.
+            // However, only the system and compilers can derive explicitly from the Array class. Users should employ the array constructs provided by the language.
 
-            // Arrays are fixed in size, so you cannot increase nor decrease the number of items in the array
-            // Arrays have instances and static behavior/state
-            // Very common property on array instances is .Length, with will return the number of items in the array
-            // .Length is not 0 based. A length of 0 means there are no items in the array
-            var length = myInitializedArray.Length;
-            Console.WriteLine($"myInitializedArray.Length: {myInitializedArray.Length}");
-            Console.WriteLine($"intPoition4: {intPoition4}");
+            // not allowed as Array is has no public constructors
+            // Array myArray = new Array();
 
-            // since for loops provide an index, they make iterating over an array trivial
-            // left to right, we start at index 0, terminate when i is equal to or greater than out array.Length, after each iteration, increment i by 1
-            var groceryList = new string[] { "Carrot", "Water", "Potato", "Chicken" };
-            for (int i = 0; i < groceryList.Length; i++)
+            // As a result, if you want a non-generic array, you must use the Array.CreateInstance method
+            // https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-6.0#remarks
+
+            var objectArray = Array.CreateInstance(typeof(object), 10);
+
+            // because objectArray is a non-generic object Array, nothing prevents us from adding non-ints or other types to this Array
+            // this will compile and not throw at runtime
+            objectArray.SetValue("123", 0);
+            objectArray.SetValue(true, 1);
+
+            // we can however restrict the types of values an Array can accept, but this is not checked at build-time
+            var intArray = Array.CreateInstance(typeof(int), 10);
+
+            // Non-generic arrays are not build-time type safe. this will build and pass compile checks, but will fail at runtime
+            try
             {
-                Console.WriteLine($"{i}. {groceryList}");
+                intArray.SetValue("123", 0);
+                intArray.SetValue(true, 1);
+            }
+            catch (Exception) { }
+
+            // Arrays may be accessed index (via GetValue), cannot use the typical [index] syntax
+            for (int i = 0; i < objectArray.Length; i++)
+            {
+                Console.WriteLine($"{i}. {objectArray.GetValue(i)}");
             }
 
-            Console.WriteLine();
-
-            // we can do the same in revers 
-            // this will iterate last to first, right to left of our array
-            for (int i = groceryList.Length - 1; i >= 0; i--)
+            // Array index values are mutable
+            var stringArray = Array.CreateInstance(typeof(string), 10);
+            for (int i = 0; i < stringArray.Length; i++)
             {
-                Console.WriteLine($"{i}. {groceryList}");
+                stringArray.SetValue("changed " + i, i);
+                Console.WriteLine(stringArray.GetValue(i));
             }
 
-            // Just because we can't add or remove positions from the array, doesn't mean we can assign existing positions values
-            // Example: we can create an int array with 20 index position, but they are not yet filled
-            var crazyIntArray = new int[20];
-            // Now we can provide values for each index
-            for (int i = 0; i < crazyIntArray.Length; i++)
+            // All arrays implement IEnumerable, so we can enumerate as well
+            foreach (var item in stringArray)
             {
-                crazyIntArray[i] = i * i;
-                Console.WriteLine(crazyIntArray[i]);
+                Console.WriteLine(item);
             }
-
-            // We can even reassign those values. We simply caot add or remove indexed positions
-            for (int i = 0; i < crazyIntArray.Length; i++)
-            {
-                crazyIntArray[i] = crazyIntArray[i] * 10;
-                Console.WriteLine(crazyIntArray[i]);
-            }
-
-            // An array can be single-dimensional, multidimensional or jagged.
-            // I have never needed to use multidimensional or jagged arrays, so I will leave those as deep dive topics
-            // TODO: consider excersizes on multidimensional or jagged arrays
-
-            // If we ever need to add or remove from an array, we can't. Instead, we would need to create a new array
-            // This makes arrays limited in use for many real life scenarios. For a more flexible collection data structure we can use a List
-
-            // Arrays very are common data structures. Example, JS has an array that you can add (push) and remove (pop) on.
-
-            // The Array class has some helpful static methods as well
-            // If instead of getting an item by index, we wanted to get an index from an item, we can call Array.IndexOf(array, item)
-            var index = Array.IndexOf(groceryList, "Potato");
-            Console.WriteLine($"The index position of Potato on groceryList is {index}");
-
             #endregion
 
-            #region Generic Lists
-            // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections
-            // Lists are functionally superior to arrays, but they have an added performance cost. With modern hardware, this performance cost is often safely ignored
-            // But it is work noting that if you have really large collections to manipulate, arrays will perform better, especially if the size of the collection is constant
+            #region System.Collections
+            // System.Collections provides classes that use Array instances likely using the Array.CreateInstance(typeof(object), ~)
+            // where ~ may be the istantiated values length if provided
 
-            // A Generic List is a typed collection, so you will need to declare the type
-            // The List class is in the System.Generics.Collection namespace, so you will need to reference that in a using statement at the top of the file
-            List<string> myStringList = new List<string>();
-            // using var
-            var myIntList = new List<int>();
-            // initializing a List
-            var daysOfTheWeek = new List<string> { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
-            // we can easily add new values to a list
-            daysOfTheWeek.Add("Saturday");
-            // we can remove easily as well
-            daysOfTheWeek.Remove("Monday");
-            // sorting is also easy with base data types
-            daysOfTheWeek.Sort();
+            // ArrayList is an abstraction that allows us to add/remove from an Array
+            // ArrayList is heterogeneous, meaning the values types may not be consistent
+            ArrayList nonGenericArray = new ArrayList() { "word", 'l', 1, 1.5, null };
+            // But all that is happening is that it is creating a new Array and replacing the old Array
+            nonGenericArray.Add("new item!");
 
-            var months = new List<string> { };
-            // We can even add many values to a list at once
-            months.AddRange(new string[] { "Jan", "Feb", "Mar", "Apr", "Jun" });
-            months.AddRange(new List<string> { "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" });
-            // Notice we can add an array, and a list for AddRange, this is because both arrays and lists implement an interface call IEnumerable
-            // We will cover interfaces later, but for now, we can say that arrays and lists are collections that implement IEnumberable
-            // List has no static members. All state/behavior exists on instances
+            Queue nonGenericQueue = new Queue();
+            nonGenericQueue.Enqueue("word");
+            nonGenericQueue.Enqueue('o');
+            nonGenericQueue.Enqueue(1);
+            nonGenericQueue.Enqueue(1.5);
+            nonGenericQueue.Enqueue(null);
 
+            Stack nonGenericStack = new Stack();
+            nonGenericStack.Push("word");
+            nonGenericStack.Push('o');
+            nonGenericStack.Push(1);
+            nonGenericStack.Push(1.5);
+            nonGenericStack.Push(null);
+
+            Hashtable nonGenericHashTable = new Hashtable();
+            nonGenericHashTable.Add(0, "word");
+            nonGenericHashTable.Add(1, 'o');
+            nonGenericHashTable.Add(2, 1);
+            nonGenericHashTable.Add(3, 1.5);
+            nonGenericHashTable.Add(4, null);
+
+            // You can see the issue with using non-generics: there is no garuntee that the values in the collections are of any type 
+            // You have no compile time type checking
             #endregion
 
-            #region Dictionaries
-            // Dictionaries are simply typed key-value pairs
-            Dictionary<string, int> myDictionary = new Dictionary<string, int>();
-            // The left type parameter is the key, the right is the value
-            myDictionary.Add("Noon", 12);
-            myDictionary.Add("Midnight", 24);
+            #region Array Regrets
+            // I think that when C# 1.0 was designed, there was the idea that an IList could be fixed in size, or could expand/contract but ICollection could not
+            // Array implements IList, there therefor non-generic Arrays of IList have the IsFixedSize property as well as Add/Remove etc. nut will throw on Array as it is fixed in size
+            var isFixed = objectArray.IsFixedSize;
+            // If the IList type IsFixedSize == true, you could anticipate it and code accordingly, so you could check IsFixedSize before calling Add/Remove to prevent a throw
+            // This makes sense, though I think it would have been better to separate the interface into an IFixedList and an IList
+            // But is IFixedList was a thing, we may have had multipe array types... As Lists use arrays under their implementation
+            // https://stackoverflow.com/questions/16387286/is-listt-really-an-undercover-array-in-c
 
-            // You can get a value by passing a key into the Dictionaries indexr
-            var item = myDictionary["Noon"];
+            // When C# implemented generics in 2.0, it does some compiler trickery to inject the generic IList<T>, as well as ICollection<T> and IEnumerable<T>
+            // It is unfortunate that the non-generic and generic collection interfaces share the same name as they have different contracts
 
-            // You can find, add, remove, etc. on Dictionaries, but the keys must always be unique
-            // Like Lists, Dictionaries have no static methods, only instanced methods
+            // IList https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-6.0#constructors
+            // has IsFixedSize, IsReadOnly, Add
+            // IList<T> https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-6.0#properties
+            // does not have IsFixedSize, IsReadOnly, but does have Add (and many other methods)
+            // we can only access IsFixedSize, IsReadOnly by accessing the IList on IList<T>
+            // I assume the IList<T>.Add hides the IList.Add
 
-            #endregion
+            // https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection?view=net-6.0#properties
+            // Does not have Add, just has a CopyTo and GetEnumerator
+            // https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1?view=net-6.0#properties
+            // Does have Add/Remove/Clear/Contains as well as CopyTo and GetEnumerator
 
-            #region IEnumerable
-            // TODO: this will be covered in a later lesson, but these links provide a lot of technical context on various types of collections
-            // IEnumerable: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-6.0#remarks
-            // ICollection: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1?view=net-6.0#remarks
-            // IDictionary: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2?view=net-6.0#remarks
-            // IList: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1?view=net-6.0#remarks
+            // IList<T> does not have IsFixedSize, but because all IList<T> also implements IList, we can do (arr as IList).IsFixedSize to get this property
+            // or we can cast it ((System.Collections.IList)arr).IsFixedSize
 
-            // For a list of all generic collections: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic?view=net-6.0
-            #endregion
+            // Breakdown:
+            // ICollection is simply an extension of IEnumerable that provides copy and synchronization features
+            // It does not have Add/Remove functionality
+            // All System.Collection classes implement ICollection
+            // IList extend ICollection with fixed/readonly checking as well as Add/Remove/Insert/Clear functionality and access via indexing
+            // IDictionary extend ICollection with fixed/readonly checking, Add/Remove functionality around key/value pair types of DictionaryEntry
 
-            #region ForEach
-            // ForEach is by far the most commonly used iteration constuct, and it will work for any IEnumerable type instance
-            var statements = new string[] { "hello", "bye bye", "have a nice day", "nice to meet you" };
-            // (keyboard foreach tab + tab)
-            // foreach (var itemInIteration in collectionToIterate)
-            // each item in the collection will automatically be passed into the var declared in the foeach expression
-            foreach (var statement in statements)
-            {
-                Console.WriteLine(statement);
-            }
+            // ICollection<T> is an extension of IEnumerable<T> that provides Add/Remove/Insert/Clear/Contains/CopyTo
+            // Because of this, any type that implements ICollection<T> will have an Add/Remove etc., even typed arrays, though they will throw if called (via compiler trickery)
+            // All System.Collection.Generic classes implement ICollection<T>
+            // IList<T> extends ICollection<T> with Instert/RemoveAt and indexing
+            // IDictionary<T> extends ICollection<T> with Add(TKey, TValue), ContainsKey(TKey), TryGetValue(TKey, TValue)
 
-            var questions = new List<string> { "how are you?", "What did you do today?", "how is your family" };
-            foreach (var question in questions)
-            {
-                Console.WriteLine(question);
-            }
-
-            foreach (var dictionaryItem in myDictionary)
-            {
-                Console.WriteLine($"{dictionaryItem.Key} = {dictionaryItem.Value}");
-            }
-
-            // ForEach iteration loops are very simple and powerful
-            // If you have no need to maintain an index value, ForEach is likely the way to go when iterating on collections
-
-            // This may help you identify which loop fits best in your scenario:
-            // If I cannot use the LinQ .ForEach(), I will use the construct ForEach
-            // If I need an index, or am concerned about performance, a for/forr may be used
-            // If the loop termination is not determined, a while loop can be used
-            // If I need the while loop to occur at least once, I will use the doWhile
-
-            // 90%+ of the time, especially in web development, the go to iteation construct is ForEach and the LinQ .ForEach()
-            #endregion
-
-            #region Deep Dive
-            // Performance considerations: https://stackoverflow.com/questions/365615/in-net-which-loop-runs-faster-for-or-foreach/365658#365658
+            // Rule of thumb:
+            // If you are in control of the type, and do not need more than simple enumeration on a mutable, fixed-size collection, an array is adequate
+            // If you need any functionality beyond that, it is best to avoid arrays and to use a construct from the System.Collections.Generic namespace
             #endregion
         }
     }

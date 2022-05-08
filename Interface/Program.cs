@@ -80,12 +80,7 @@ namespace Interface
             // can mock that dependance with an interface, and use the mock instead.
             // So, if you have an http api service library, instead of making the actual library, you can instead mock its signature and immediatly provide data appropriate for your tests 
             #endregion
-
-            // IEnumerable is an interface that...
-            // ICollection is an interface that...
-            // IDictionary is an interface that...
-            // IList is an interface that...
-            IEnumerable<string> array = new string[] { "test", "testing" };
+            
             // If we examine the Array class, we can see it implements IEnumerable, so anywhere an IEnumerable is required, we can use an array
             // Same with Lists, which implement IEnumerable and ICollection
 
