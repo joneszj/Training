@@ -23,7 +23,7 @@ namespace CashMart
             try
             {
                 var rng = new Random();
-                var market = new Market("SuperDuper Mart", "123 Main St.");
+                var market = new Market("SuperDuper Mart", "123 Main St.", (log) => Console.WriteLine(log));
                 market.AddRegisters(10);
                 market.SetItems(new Item[] {
                     new Item("Milk", 5),
@@ -31,7 +31,12 @@ namespace CashMart
                     new Item("Water", 3),
                     new Item("Eggs", 4),
                     new Item("Ice Cream", 10),
-                    new Item("Apple", 1)
+                    new Item("Apple", 1),
+                    new Item("Orange", 1),
+                    new Item("Soda", 5),
+                    new Item("Yogurt", 3),
+                    new Item("Chips", 3),
+                    new Item("Chocolate", 4)
                 });
 
                 do
@@ -40,15 +45,34 @@ namespace CashMart
                     IEnumerable<Shopper> shoppers = Shopper.CreateShoppers(rng.Next(0, 10))
                         .Select(e => e.GoShopping(rng, market));
 
-                    // Notice: Createshoppers and GoShopping execution is deferred until we start enumerating
-                    foreach (var item in shoppers)
+                    // Notice: CreateShoppers and GoShopping execution is deferred until we start enumerating
+                    foreach (var shopper in shoppers)
                     {
-
+                        var register = market.GetRegister(rng);
+                        if (register == null)
+                        {
+                            do
+                            {
+                                Console.WriteLine("Emergeny, all registers are offline. Please hold...");
+                                market.ReplenishRegisters();
+                                register = market.GetRegister(rng);
+                            } while (register == null);
+                        }
+                        Console.WriteLine("A customer has started checkout...");
+                        shopper.CheckOut(register, (t) => Console.WriteLine($"{t.Item.Name} was {t.TransactionType.ToString().ToLower()} for {t.Item.Price}!"));
+                        Console.WriteLine("A customer has completed checkout...");
                     }
 
+                    Console.WriteLine("\n\n*** Report ***");
+                    Console.WriteLine("Market Reserves: " + market.Reserve);
+                    Console.WriteLine("Cash in registers: " + market.AllCahRegistersTotal());
+
+                    market.ReplenishRegisters();
+                    Console.WriteLine();
                     // end turn
                     Console.ReadKey(true);
                 } while (!market.Bankrupt);
+                Console.WriteLine("The market has gone bankrupt!");
             }
             catch (Exception ex)
             {

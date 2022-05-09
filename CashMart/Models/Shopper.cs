@@ -25,13 +25,8 @@ namespace CashMart.Models
             // see remarks https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.selectmany?view=net-6.0 to understand why this has values 
             ItemsToBuy = Enumerable.Range(1, rng.Next(1, 20))
                 .Select(RandomItem(rng, market))
-                .SelectMany(e => e).Where(e=>e.Price > 5);
+                .SelectMany(e => e);
             // ItemsToBuy is niether an array or a list, in this context it is an iterator: https://stackoverflow.com/questions/47786030/what-is-the-default-concrete-type-of-ienumerable/72165814#72165814
-
-            foreach (var item in ItemsToBuy)
-            {
-
-            }
 
             ItemsToReturn = Enumerable.Range(1, rng.Next(0, 5))
                 .Select(RandomItem(rng, market))
@@ -47,6 +42,21 @@ namespace CashMart.Models
             //}
 
             return this;
+        }
+
+        public void CheckOut(CashRegister cashRegister, Action<Transaction> log)
+        {
+            foreach (var item in ItemsToReturn)
+            {
+                log?.Invoke(new Transaction(item, TransactionType.Returned));
+                cashRegister.RemoveCash(item.Price);
+            }
+
+            foreach (var item in ItemsToBuy)
+            {
+                log?.Invoke(new Transaction(item, TransactionType.Sold));
+                cashRegister.AddCash(item.Price);
+            }
         }
 
         private static Func<int, IEnumerable<Item>> RandomItem(Random rng, Market market)

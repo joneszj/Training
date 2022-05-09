@@ -158,6 +158,10 @@ namespace GenericCollections
             // Or, convert the IEnumerable to an array before doing the for loop if you need to
             #endregion
 
+            #region Iterators
+            // https://docs.microsoft.com/en-us/dotnet/csharp/iterators
+            #endregion
+
             #endregion
 
             #region System.Collection.Generic
