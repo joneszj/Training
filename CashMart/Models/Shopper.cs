@@ -44,18 +44,16 @@ namespace CashMart.Models
             return this;
         }
 
-        public void CheckOut(CashRegister cashRegister, Action<Transaction> log)
+        public void CheckOut(CashRegister cashRegister)
         {
             foreach (var item in ItemsToReturn)
             {
-                log?.Invoke(new Transaction(item, TransactionType.Returned));
-                cashRegister.RemoveCash(item.Price);
+                cashRegister.Buyback(item);
             }
 
             foreach (var item in ItemsToBuy)
             {
-                log?.Invoke(new Transaction(item, TransactionType.Sold));
-                cashRegister.AddCash(item.Price);
+                cashRegister.Sell(item);
             }
         }
 

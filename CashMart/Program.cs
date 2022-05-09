@@ -38,6 +38,7 @@ namespace CashMart
                     new Item("Chips", 3),
                     new Item("Chocolate", 4)
                 });
+                int makertTotalPreviousTurn = market.Reserve;
 
                 do
                 {
@@ -53,19 +54,23 @@ namespace CashMart
                         {
                             do
                             {
-                                Console.WriteLine("Emergeny, all registers are offline. Please hold...");
+                                Console.BackgroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Emergency, all registers are offline. Please hold...");
                                 market.ReplenishRegisters();
                                 register = market.GetRegister(rng);
+                                Console.ResetColor();
                             } while (register == null);
                         }
                         Console.WriteLine("A customer has started checkout...");
-                        shopper.CheckOut(register, (t) => Console.WriteLine($"{t.Item.Name} was {t.TransactionType.ToString().ToLower()} for {t.Item.Price}!"));
+                        shopper.CheckOut(register);
                         Console.WriteLine("A customer has completed checkout...");
                     }
 
                     Console.WriteLine("\n\n*** Report ***");
                     Console.WriteLine("Market Reserves: " + market.Reserve);
                     Console.WriteLine("Cash in registers: " + market.AllCahRegistersTotal());
+                    Console.WriteLine("Total difference: " + (market.Reserve - makertTotalPreviousTurn));
+                    makertTotalPreviousTurn = market.Reserve;
 
                     market.ReplenishRegisters();
                     Console.WriteLine();

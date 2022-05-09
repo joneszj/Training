@@ -21,9 +21,9 @@ namespace CashMart.Models
         public int TurnsToReplenish { get; set; }
         public int CurrentCash { get; set; } = 50;
         public int TotalCashStorage { get; } = 100;
-        public void AddCash(int cash)
+        public void Sell(Item item)
         {
-            if (CurrentCash + cash >= TotalCashStorage)
+            if (CurrentCash + item.Price >= TotalCashStorage)
             {
                 // transfer cash to market
                 MakeInactive();
@@ -32,22 +32,25 @@ namespace CashMart.Models
             }
             else
             {
-                CurrentCash += cash;
+                CurrentCash += item.Price;
             }
+            Log.Invoke($"{item.Name} was sold for {item.Price}!");
         }
-        public void RemoveCash(int cash)
+        public void Buyback(Item item)
         {
-            if (CurrentCash - cash < 0)
+            if (CurrentCash - item.Price < 0)
             {
                 // transfer cash from market
+                Sell(item);
                 Market.RemoveReseve(100);
-                AddCash(cash + 100);
+                Sell(new Item("Transfer from Market", 100));
                 MakeInactive();
             }
             else
             {
-                CurrentCash -= cash;
+                CurrentCash -= item.Price;
             }
+            Log.Invoke($"{item.Name} was returned for {item.Price}!");
         }
         private void MakeInactive()
         {
