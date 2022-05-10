@@ -9,6 +9,7 @@ namespace CastConvert
             // Where parsing attempts to extract a value and type from a string, cast and convert are similar, but don't require a string
             // So, parsing is really used against strings
             // https://exceptionnotfound.net/csharp-in-simple-terms-3-casting-conversion-parsing-is-as-and-typeof/
+            // https://stackoverflow.com/a/15395832/3700826
 
             #region Cast
             // Casting will attempt to force one type into another

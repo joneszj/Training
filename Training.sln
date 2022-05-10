@@ -155,7 +155,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Excercises", "_Excercises"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class", "Class", "{1102D618-6F86-401C-B371-03F10A01701A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_CashMart", "CashMart\01_CashMart.csproj", "{B5741B87-090B-4250-B820-CFC031F54F63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_CashMart", "CashMart\02_CashMart.csproj", "{B5741B87-090B-4250-B820-CFC031F54F63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Reflection", "04 Reflection", "{80EE142F-E106-4209-B086-90AA539C4E51}"
 EndProject
@@ -167,7 +167,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "Polymorphis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{7EAE9426-D0D5-4ED8-BD7E-CE5E5590670E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_HardZoo", "HardZoo\02_HardZoo.csproj", "{F21343C4-8879-478A-9FBF-335C23D21F32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_HardZoo", "HardZoo\03_HardZoo.csproj", "{F21343C4-8879-478A-9FBF-335C23D21F32}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_SmartZoo", "SmartZoo\02_SmartZoo.csproj", "{33A357C8-89B5-4EE1-80E7-02ABB9144810}"
 EndProject
@@ -203,7 +203,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Swagger", "06 Swagger", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Generic Repository", "04 Generic Repository", "{492C9B06-A9D0-4730-BDC7-E3E970F79A16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_GenericCollections", "GenericCollections\07_GenericCollections.csproj", "{77AC8734-DC2A-457C-9366-294FAAAB3AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_GenericCollections", "GenericCollections\07_GenericCollections.csproj", "{77AC8734-DC2A-457C-9366-294FAAAB3AEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_SimpleMathQuizClass", "SimpleMathQuizClass\01_SimpleMathQuizClass.csproj", "{46F1AC6E-931B-4178-AC18-60153C05CFAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{9F10FEF9-54C0-412F-8DE5-1A5BC88A7394}"
+	ProjectSection(SolutionItems) = preProject
+		overview notes.txt = overview notes.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -403,6 +410,10 @@ Global
 		{77AC8734-DC2A-457C-9366-294FAAAB3AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77AC8734-DC2A-457C-9366-294FAAAB3AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77AC8734-DC2A-457C-9366-294FAAAB3AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F1AC6E-931B-4178-AC18-60153C05CFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F1AC6E-931B-4178-AC18-60153C05CFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F1AC6E-931B-4178-AC18-60153C05CFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F1AC6E-931B-4178-AC18-60153C05CFAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -496,6 +507,7 @@ Global
 		{6C63B841-A5EF-44BD-B119-04FC00502660} = {E33F782A-3098-483F-A557-88B490920436}
 		{492C9B06-A9D0-4730-BDC7-E3E970F79A16} = {6D2C7BA8-DC5B-4496-806F-6B0B40E7FB0B}
 		{77AC8734-DC2A-457C-9366-294FAAAB3AEA} = {608E01CE-94FD-475B-B95D-EF0B50F4B5EF}
+		{46F1AC6E-931B-4178-AC18-60153C05CFAC} = {1102D618-6F86-401C-B371-03F10A01701A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3924855-373B-4CBC-92B3-C4791775D7BD}

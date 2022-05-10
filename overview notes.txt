@@ -1,0 +1,61 @@
+Terms: solution, project, complie-time, run-time, build, dynamic linked library - dll, run, breakpoint, stepping (in, over), value type, reference type
+
+Console: WriteLine, ReadLine, ReadKey
+
+* = reinforce
+
+***fundamentals
+	***data types
+		types 			- a definition of something
+							common types: string, char, int, double, bool
+		variables 		- a block or memory that contains a value
+							variables are restricted to their type in strongly typed languages like C#
+							only exception would be implicit casting
+
+	***strings
+		interpolation	- "${}"
+		concatonation	- "" + ""
+		escape chars	- \n
+		immutability	- all string are immutable, meaning they cannot change. when it appears we are modifying a string, the compiler is actually generating a new string for us
+							because this can have a massive impact on memory when working with many strings, string build allows us to dynamically construct strings without the performance hit
+
+	***control flow:
+		if 				- a construct that will execute a code block if its expression if true
+							else is provided and exeucted if the expression is false
+							else and if can be joined for multiple expression checks
+		switch * 		- a construct that will execute a code block if the value matches a case
+							switches produce jump trees, that allow the switch to immediatly know which block of to to run, instead of evaluating the expresion each check like the if does
+
+	***iteration:
+		while *			- a construct that will execute a code block until its expression is false
+							the express may already be false, so the while may never run
+							while loops are optimal when the termination expression can not be determined from the code
+		doWhile	*		- same as a while, but will always execute atleast once
+							while loops are optimal when the termination expression can not be determined from the code and we want the loop to run atleast once
+		for/reverse for	- a construct that will execute a code block until its expression is false
+							for loops accept a starting statement, an expression that when false will terminate the loop, and an opptional statement that will execute after each iteration
+							for loops are optimal when the termination expression can be determined from the code
+
+	***parsing
+		parse			- will attempt to convert a base type value from a string
+							will throw an exception if the conversion fails
+		tryParse		- will attempt to convert a base type value from a string
+							will return a bool if the conversion was successful, and out the converted value
+
+	***conversion
+		cast			- implicit/explicit conversion of similar types (cast (), as, is)
+							implicit example: double x = 10; though the int 10 is not a double, it is similar to a double, and smaller, so no data is lost
+							implicit example: Person x = child; where child is a type that inherits (derives from) Person, 
+							explicit example: int x = (int)1.25; will cast the double as an int ant the .25 will be lost and the cast (int) is required to avoid complie-time error
+		convert			- explicit conversion
+
+	***collections
+		arrays * 		- a fixed typed collection or sequence of typed values
+		list<t>			- a non-fixed typed collection or sequence of typed values
+
+		***enumeration
+		ienumerable		- anything that can be enumerated using an iterator
+		foreach			- enumerates over an ienumerable
+
+	***linq
+		linq			- functional style of programming with ienumerables
