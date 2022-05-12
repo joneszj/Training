@@ -14,7 +14,9 @@ Console: WriteLine, ReadLine, ReadKey
 
 	***strings
 		interpolation	- "${}"
+							this is syntactic sugar for string.Format()
 		concatonation	- "" + ""
+							this is syntactic sugar for string.Concat()
 		escape chars	- \n
 		immutability	- all string are immutable, meaning they cannot change. when it appears we are modifying a string, the compiler is actually generating a new string for us
 							because this can have a massive impact on memory when working with many strings, string build allows us to dynamically construct strings without the performance hit
@@ -59,3 +61,18 @@ Console: WriteLine, ReadLine, ReadKey
 
 	***linq
 		linq			- functional style of programming with ienumerables
+
+***types
+	***reference types
+		class			- 
+		interface		- 
+		delegates		-
+		dynamic			-
+		string			-
+		object			-
+		record			-
+	***value types
+		struct			-
+		enum			-
+		tuple			-
+		base value types-
