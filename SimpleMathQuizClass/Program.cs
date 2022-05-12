@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SimpleMathQuizClass.Data;
+using SimpleMathQuizClass.Interfaces;
+using SimpleMathQuizClass.IO;
+using System;
 using System.Linq;
 
 namespace SimpleMathQuizClass
@@ -10,8 +13,8 @@ namespace SimpleMathQuizClass
             try
             {
                 Random random = new();
-                Logger loggerReader = new();
-                MathQuizMessagingService mathQuizMessagingService = new(loggerReader);
+                ICanLogRead loggerReader = new Logger();
+                MathQuizMessagingService mathQuizMessagingService = new MathQuizMessagingService(loggerReader);
 
                 var questions = Enumerable.Range(1, 10).Select(e => Question.GenerateRandomQuestion(random));
                 new MathQuizService(mathQuizMessagingService)

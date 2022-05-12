@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace SimpleMathQuizClass
+namespace SimpleMathQuizClass.Data
 {
     class Question
     {

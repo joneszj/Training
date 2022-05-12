@@ -1,7 +1,7 @@
 ﻿using SimpleMathQuizClass.Interfaces;
 using System;
 
-namespace SimpleMathQuizClass
+namespace SimpleMathQuizClass.IO
 {
     /// <summary>
     /// Basic IO using the Console

@@ -1,6 +1,7 @@
-﻿using SimpleMathQuizClass.Interfaces;
+﻿using SimpleMathQuizClass.Data;
+using SimpleMathQuizClass.Interfaces;
 
-namespace SimpleMathQuizClass
+namespace SimpleMathQuizClass.IO
 {
     /// <summary>
     /// Manages ICanLogRead for MathQueizService
