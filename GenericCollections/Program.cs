@@ -34,7 +34,7 @@ namespace GenericCollections
 
             // Alternatively, you can create an array with values set in the arrat
             var myStringArray2 = new string[2] { "Hello", "Goodbye" };
-            
+
             // Arrays created this way do not need the length set, as the compiler will do this for you
             var myIntArray = new int[] { 1, 2, 3, 4, 5 };
 

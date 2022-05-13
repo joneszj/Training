@@ -8,7 +8,7 @@ namespace SimpleMathQuizClass.IO
     /// </summary>
     class MathQuizMessagingService
     {
-        private ICanLogRead _logger;
+        private readonly ICanLogRead _logger;
         public MathQuizMessagingService(ICanLogRead logger)
         {
             _logger = logger;

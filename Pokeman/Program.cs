@@ -217,7 +217,7 @@ namespace Pokeman
                     default:
                         Console.WriteLine("Your Pokeman has given up. Try again later...");
                         break;
-                } 
+                }
                 #endregion
             }
             catch (Exception ex)

@@ -13,7 +13,7 @@ Console: WriteLine, ReadLine, ReadKey
 							only exception would be implicit casting
 
 	***strings
-		interpolation	- "${}"
+		interpolation	- $"{}"
 							this is syntactic sugar for string.Format()
 		concatonation	- "" + ""
 							this is syntactic sugar for string.Concat()
@@ -28,16 +28,6 @@ Console: WriteLine, ReadLine, ReadKey
 		switch * 		- a construct that will execute a code block if the value matches a case
 							switches produce jump trees, that allow the switch to immediatly know which block of to to run, instead of evaluating the expresion each check like the if does
 
-	***iteration:
-		while *			- a construct that will execute a code block until its expression is false
-							the express may already be false, so the while may never run
-							while loops are optimal when the termination expression can not be determined from the code
-		doWhile	*		- same as a while, but will always execute atleast once
-							while loops are optimal when the termination expression can not be determined from the code and we want the loop to run atleast once
-		for/reverse for	- a construct that will execute a code block until its expression is false
-							for loops accept a starting statement, an expression that when false will terminate the loop, and an opptional statement that will execute after each iteration
-							for loops are optimal when the termination expression can be determined from the code
-
 	***parsing
 		parse			- will attempt to convert a base type value from a string
 							will throw an exception if the conversion fails
@@ -50,6 +40,16 @@ Console: WriteLine, ReadLine, ReadKey
 							implicit example: Person x = child; where child is a type that inherits (derives from) Person, 
 							explicit example: int x = (int)1.25; will cast the double as an int ant the .25 will be lost and the cast (int) is required to avoid complie-time error
 		convert			- explicit conversion
+
+	***iteration:
+		while *			- a construct that will execute a code block until its expression is false
+							the express may already be false, so the while may never run
+							while loops are optimal when the termination expression can not be determined from the code
+		doWhile	*		- same as a while, but will always execute atleast once
+							while loops are optimal when the termination expression can not be determined from the code and we want the loop to run atleast once
+		for/reverse for	- a construct that will execute a code block until its expression is false
+							for loops accept a starting statement, an expression that when false will terminate the loop, and an opptional statement that will execute after each iteration
+							for loops are optimal when the termination expression can be determined from the code
 
 	***collections
 		arrays * 		- a fixed typed collection or sequence of typed values

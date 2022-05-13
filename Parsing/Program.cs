@@ -65,10 +65,10 @@ namespace Parsing
 
             // Create a simple 10 question math quiz where you will track a count of incorrect and correct answers
             // Ask the question, store the answer, keep track of the score, display the score after the quiz is finished
-                // Unlike the previous math quiz, use parsing to validate user inputs as proper answer values (ints, floats, etc)
-                // If the parse fails, let the user know that the input was invalid and the answer will be considered incorrect
-                    // Later, when we touch on loops and iteration, we can easily implement a try again feature
-                    // But for now, simply mark the answer invalid and incorrect and move to the next question
+            // Unlike the previous math quiz, use parsing to validate user inputs as proper answer values (ints, floats, etc)
+            // If the parse fails, let the user know that the input was invalid and the answer will be considered incorrect
+            // Later, when we touch on loops and iteration, we can easily implement a try again feature
+            // But for now, simply mark the answer invalid and incorrect and move to the next question
             #endregion
         }
     }

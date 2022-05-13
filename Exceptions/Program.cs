@@ -52,7 +52,7 @@ namespace Exceptions
             catch (Exception)
             {
                 // throw;
-            } 
+            }
             #endregion
 
             #region Validation vs Exception Handling

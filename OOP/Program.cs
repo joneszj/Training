@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OOP
+﻿namespace OOP
 {
     class Program
     {

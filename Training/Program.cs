@@ -44,9 +44,9 @@ namespace Training
             // (A framework is an opinionated pattern to completing certain tasks. Ex: MVC is a framework for constructing and managing a web site
             // With the Console application, we really only need to concern ourselves with input and output
             // The rest is purely learning C# and .Net base functionality
-            
+
             // TODO: go over intellisense
-            
+
             // We can use Console.WriteLine(string) to output text to the applicaiton
             Console.WriteLine("Hello!");
             // We can use Console.ReadKey() to get a single keypress from a user and store it into a variable

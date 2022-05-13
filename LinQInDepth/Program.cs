@@ -124,7 +124,8 @@ namespace LinQInDepth
             {
                 Console.WriteLine("even" + e);
                 return e;
-            }).Select((e, i) => {
+            }).Select((e, i) =>
+            {
                 Console.WriteLine("select: 3 value:" + e);
                 return e;
             }).ToList();

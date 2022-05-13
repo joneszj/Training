@@ -1,6 +1,6 @@
 ﻿namespace SimpleMathQuizClass.Interfaces
 {
-    interface ICanLogRead: ICanLog, ICanRead
+    interface ICanLogRead : ICanLog, ICanRead
     {
     }
 }

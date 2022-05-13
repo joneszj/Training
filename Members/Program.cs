@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Members
+﻿namespace Members
 {
     class Program
     {
@@ -18,11 +16,11 @@ namespace Members
 
             #region Common Members
             // fields - state on a class
-                // fields may be marked 'readonly' meaning the value can only be set at declaration or in a constructor
+            // fields may be marked 'readonly' meaning the value can only be set at declaration or in a constructor
             // properties - state on a class, is a getter setter wrapper of a field
-                // auto-properties (most common form, also called properties) - state on a class, is a getter setter wrapper of a field, and the field is automatically hidden
-                // properties can be made readonly, or write only by ommiting the setter or the getter respectively
-                // properties are an example/implementation of the encapsulation OOP principle: https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop
+            // auto-properties (most common form, also called properties) - state on a class, is a getter setter wrapper of a field, and the field is automatically hidden
+            // properties can be made readonly, or write only by ommiting the setter or the getter respectively
+            // properties are an example/implementation of the encapsulation OOP principle: https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop
             // methods - execute code blocks
             // constructors - execute when a class object is instantiated, and for parameters to be supplied that are required for the object to function properly
             #endregion
@@ -52,7 +50,7 @@ namespace Members
             }
 
             // A field
-            int myField;
+            readonly int myField;
 
             // A readonly field, value can only be set at declaration or in a constructor
             readonly int myReadOnlyField;
@@ -60,7 +58,7 @@ namespace Members
             // A full-property (or just property)
             private int myProperty;
             public int MyProperty { get => myProperty; set => myProperty = value; }
-            
+
             // An auto-property (or just property) (prop + tab + tab)
             public int MyProperty2 { get; set; }
 

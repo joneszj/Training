@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SmartPokeman
+﻿namespace SmartPokeman
 {
     class Program
     {

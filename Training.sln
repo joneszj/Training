@@ -205,12 +205,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Generic Repository", "04
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_GenericCollections", "GenericCollections\07_GenericCollections.csproj", "{77AC8734-DC2A-457C-9366-294FAAAB3AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_SimpleMathQuizClass", "SimpleMathQuizClass\01_SimpleMathQuizClass.csproj", "{46F1AC6E-931B-4178-AC18-60153C05CFAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_SimpleMathQuizClass", "SimpleMathQuizClass\01_SimpleMathQuizClass.csproj", "{46F1AC6E-931B-4178-AC18-60153C05CFAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{9F10FEF9-54C0-412F-8DE5-1A5BC88A7394}"
 	ProjectSection(SolutionItems) = preProject
 		overview notes.txt = overview notes.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Cancellation", "05 Cancellation", "{C476C569-BE95-4E17-9207-D0DDA4C7D408}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -508,6 +510,7 @@ Global
 		{492C9B06-A9D0-4730-BDC7-E3E970F79A16} = {6D2C7BA8-DC5B-4496-806F-6B0B40E7FB0B}
 		{77AC8734-DC2A-457C-9366-294FAAAB3AEA} = {608E01CE-94FD-475B-B95D-EF0B50F4B5EF}
 		{46F1AC6E-931B-4178-AC18-60153C05CFAC} = {1102D618-6F86-401C-B371-03F10A01701A}
+		{C476C569-BE95-4E17-9207-D0DDA4C7D408} = {BE14F66B-7D58-494E-B0BF-D317D4AE3221}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3924855-373B-4CBC-92B3-C4791775D7BD}

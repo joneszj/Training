@@ -35,7 +35,7 @@ namespace Variables
                 bool (true or false) 
                 char (a single characted, always in single quotes '')
                 string (multiple characters, always in double quates "")
-             */ 
+             */
             #endregion
 
             #region Scope
@@ -110,7 +110,7 @@ namespace Variables
             // Assign uninitialized variables and reassign existing variables
             // Explore the instance methods of various base data type instances
             // Explore the static methods of various base data types
-            
+
             // Practice outputing text to the console with the Write and WriteLine statis methods
             // Practice storing input from the console from the ReadlLine and ReadKey static methods
             // Practice outputing variables you create and alter to the console

@@ -59,7 +59,7 @@ namespace ControlFlow
                 Console.WriteLine("What is your favorite band?");
                 var band = Console.ReadLine();
                 Console.WriteLine($"Great! Lets listen to {band}");
-            } 
+            }
             else Console.WriteLine("Hmmm.... Lets do something else.");
             // notice, single line if/else code blocks do not need brackets
             // this will do exactly what the switch above does
@@ -101,8 +101,8 @@ namespace ControlFlow
 
             // Create a simple 10 question math quiz where you will track a count of incorrect and correct answers
             // Ask the question, store the answer, keep track of the score, display the score after the quiz is finished
-                // To complete this using ints, you may want to read up on Parsing.
-                // Otherwise, since ReadLine() returns a string, you could simply compare string to string for now
+            // To complete this using ints, you may want to read up on Parsing.
+            // Otherwise, since ReadLine() returns a string, you could simply compare string to string for now
             #endregion
         }
     }

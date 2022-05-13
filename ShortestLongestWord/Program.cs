@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace ShortestLongestWord
 {
@@ -77,9 +76,9 @@ namespace ShortestLongestWord
         // original sort algorithm source: https://stackoverflow.com/questions/20087280/sort-string-array-by-element-length
         // expanded upon to sort alphabetically for equal length strings
         // test, hello, jack, zack will sort as jack, test, zack, hello
-        private static Comparison<string> SortByLengthThenName() => 
-            (current, next) => 
+        private static Comparison<string> SortByLengthThenName() =>
+            (current, next) =>
                 current.Length.CompareTo(next.Length) == 0 ? current.CompareTo(next) : current.Length.CompareTo(next.Length);
-        
+
     }
 }

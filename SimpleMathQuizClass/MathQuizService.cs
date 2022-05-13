@@ -15,7 +15,7 @@ namespace SimpleMathQuizClass
         private static readonly char _yes = 'y';
         private IEnumerable<Question> _questions;
         private int _correctAnswers;
-        private MathQuizMessagingService _messenger;
+        private readonly MathQuizMessagingService _messenger;
 
         public MathQuizService(MathQuizMessagingService messenger)
         {
@@ -24,7 +24,7 @@ namespace SimpleMathQuizClass
         public MathQuizService(MathQuizMessagingService messenger, IEnumerable<Question> questions) : this(messenger)
         {
             _questions = questions;
-        } 
+        }
         #endregion
         public MathQuizService AddQuestions(IEnumerable<Question> questions)
         {

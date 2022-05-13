@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GatheringGame
+﻿namespace GatheringGame
 {
     class Program
     {

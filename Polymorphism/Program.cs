@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Polymorphism
+﻿namespace Polymorphism
 {
     class Program
     {
