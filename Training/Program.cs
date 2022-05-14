@@ -55,6 +55,8 @@ namespace Training
             var input = Console.ReadLine();
             // There are other methods and state on the Console such as making beep sounds and setting color, but we really only need to concern ourselves with input and output for now
 
+            // https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history
+
             #region Deep Dive
             // https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/
             // https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/main-command-line

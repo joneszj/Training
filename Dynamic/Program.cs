@@ -7,6 +7,7 @@ namespace Dynamic
         static void Main(string[] args)
         {
             // Simply ignores compile-time checking and will be receive its type at runtime
+            // https://www.youtube.com/watch?v=VyGAEbmiWjE
 
             // Var vs Dynamic
             // var implies the variable type by what it is assigned by, thus you have type safety
