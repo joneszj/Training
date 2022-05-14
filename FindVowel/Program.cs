@@ -13,9 +13,9 @@ namespace FindVowel
         {
             try
             {
-                Console.WriteLine("Enter a word and we will count the vowels (not including y and don't display vowels not found)!\n");
                 do
                 {
+                    Console.WriteLine("Enter a word and we will count the vowels (not including y and don't display vowels not found)!\n");
                     // LinQ
                     //Console.ReadLine().ToLower().Where(e =>
                     //    e == 'a' ||
@@ -27,15 +27,15 @@ namespace FindVowel
                     //    .ToList().ForEach(e => Console.WriteLine($"{e.Key}: {e.Count()}"));
 
                     // non-LinQ
-                    int a, e, i, o, u;
-                    a = e = i = o = u = 0;
+                    int aCount, eCount, iCount, oCount, uCount;
+                    aCount = eCount = iCount = oCount = uCount = 0;
                     foreach (var letter in Console.ReadLine())
                     {
-                        if (char.ToLower(letter) == 'a') a++;
-                        if (char.ToLower(letter) == 'e') e++;
-                        if (char.ToLower(letter) == 'i') i++;
-                        if (char.ToLower(letter) == 'o') o++;
-                        if (char.ToLower(letter) == 'u') u++;
+                        if (char.ToLower(letter) == 'a') aCount++;
+                        if (char.ToLower(letter) == 'e') eCount++;
+                        if (char.ToLower(letter) == 'i') iCount++;
+                        if (char.ToLower(letter) == 'o') oCount++;
+                        if (char.ToLower(letter) == 'u') uCount++;
                     }
 
                     var result = "";
@@ -47,15 +47,15 @@ namespace FindVowel
                     //    $"{(u != 0 ? $"o:{u}" : string.Empty)}";
 
                     // easier to read
-                    if (a > 0) result += $"a:{a} ";
-                    if (e > 0) result += $"e:{e} ";
-                    if (i > 0) result += $"i:{i} ";
-                    if (o > 0) result += $"o:{o} ";
-                    if (u > 0) result += $"u:{u} ";
+                    if (aCount > 0) result += $"a:{aCount} ";
+                    if (eCount > 0) result += $"e:{eCount} ";
+                    if (iCount > 0) result += $"i:{iCount} ";
+                    if (oCount > 0) result += $"o:{oCount} ";
+                    if (uCount > 0) result += $"u:{uCount} ";
 
                     Console.WriteLine(result);
                     Console.WriteLine("Continue?");
-                } while (Console.ReadKey().Key == ConsoleKey.Y);
+                } while (Console.ReadKey(true).Key == ConsoleKey.Y);
             }
             catch (Exception ex)
             {
