@@ -22,7 +22,8 @@
             // From now on, all of the code we write will be tested at minimum, and TDD'd at best
         }
 
-        // ex code we want to test, would be in a separate project
+        // ex code we want to test, is referenced in teh Tests project
+        // a project reference is required and this class needs to be mad public
         public static int TestAdd(int i, int y)
         {
             return i + y;
