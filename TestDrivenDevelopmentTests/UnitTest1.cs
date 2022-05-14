@@ -14,7 +14,7 @@ namespace TestDrivenDevelopmentTests
             int y = 1;
 
             // Act
-            var result = Program.TestAdd(i, y);
+            var result = MyTestClass.TestAdd(i, y);
 
             // Assert
             Assert.IsTrue(result == 2);

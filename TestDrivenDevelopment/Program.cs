@@ -2,7 +2,7 @@
 {
     public class Program
     {
-        static void Main(string[] args)
+        void Main(string[] args)
         {
             // Test Driven Development (TDD) is one of the best tool we have to ensure our code works the way we expect
             // Tests a automated, small and repeatable methods that assert results of our functionality
@@ -21,9 +21,12 @@
 
             // From now on, all of the code we write will be tested at minimum, and TDD'd at best
         }
+    }
 
-        // ex code we want to test, is referenced in teh Tests project
-        // a project reference is required and this class needs to be mad public
+    public class MyTestClass
+    {
+        // ex code we want to test, is referenced in the Tests project
+        // a project reference is required and this class needs to be made public
         public static int TestAdd(int i, int y)
         {
             return i + y;
