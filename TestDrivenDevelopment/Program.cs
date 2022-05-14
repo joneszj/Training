@@ -2,7 +2,7 @@
 {
     public class Program
     {
-        void Main(string[] args)
+        static void Main(string[] args)
         {
             // Test Driven Development (TDD) is one of the best tool we have to ensure our code works the way we expect
             // Tests a automated, small and repeatable methods that assert results of our functionality
