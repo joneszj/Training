@@ -9,7 +9,7 @@ namespace ControlFlow
             // Applications run top to bottom, line by line
             // Often, we may want to run a block of code based on some form of input
             // The two main means of control flow are switch and if/else statements
-            // There are others, but for not, these are fundamental
+            // There are others, but for now, these are fundamental
 
             #region Switch
             // A switch statement does what it sounds like, switches where the code will run if certain cases are true
@@ -70,14 +70,43 @@ namespace ControlFlow
             #endregion
 
             #region Nesting
-
+            if (true)
+            {
+                if (true)
+                {
+                    // nested
+                    switch (true)
+                    {
+                        // also nested
+                        default:
+                            if (true)
+                            {
+                                // further nesting
+                            }
+                            break;
+                    }
+                }
+            }
+            // in general, nesting is a code smell and can create very difficult to follow code
+            // when we get to creating our own classes and methods, we will have better means of addressing this problem
             #endregion
 
             #region Comparison Operators
-            // && and
-            // || or
-            // > greater than
-            // < less than
+
+            // && and - left and right has to be true
+            if (true && false)
+            {
+                // will not run
+            }
+            // || or - left or right has to be true
+            if (false || true)
+            {
+                // will run
+            }
+            // > greater than - left is greater than the right
+            // > greater than or equal to - left is greater than or equal to the right
+            // < less than - left is less than the right
+            // < less than or equal to - left is less than or equal to the right
             // ! not (will return the opposite bool value)
             #endregion
 
