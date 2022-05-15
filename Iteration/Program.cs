@@ -106,6 +106,7 @@ namespace Iteration
             // While loops can be used to perform infinite looping by simply leaving the expression as always true
             // For loops may also be used for infinite looping by omitting the incrementation
             // But doing so is likely a mistake, as unlike the while loops, you don't really have a means of terminating the loop without using a break;
+            // or manipulating the control variable inside the loop
             for (int i = 0; i < 10;)
             {
 
