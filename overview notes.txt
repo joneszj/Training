@@ -8,7 +8,7 @@ Console: WriteLine, ReadLine, ReadKey
 	***data types
 		types 			- a definition of something
 							common types: string, char, int, double, bool
-		variables 		- a block or memory that contains a value
+		variables 		- a block of memory that contains a value
 							variables are restricted to their type in strongly typed languages like C#
 							only exception would be implicit casting
 

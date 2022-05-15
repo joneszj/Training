@@ -38,7 +38,7 @@ namespace Parsing
             var tryParseAsBool = int.TryParse("true", out var parsedBool);
             if (tryParseAsBool)
             {
-                // if tryParseAsInt is true, we know that parsedInt will have our parsed value
+                // if tryParseAsBool is true, we know that parsedInt will have our parsed value
                 Console.WriteLine($"parsedBool is {parsedBool}");
             }
             // TryParse can even reassign an existing variable, instead of creating a new variable
@@ -46,10 +46,9 @@ namespace Parsing
             var tryParseAsFloat = float.TryParse("132.14", out parseAsFloat);
             if (tryParseAsFloat)
             {
-                // if tryParseAsInt is true, we know that parseAsFloat will have our parsed value
+                // if tryParseAsFloat is true, we know that parseAsFloat will have our parsed value
                 Console.WriteLine($"parseAsFloat is {parseAsFloat + 100}");
             }
-            // Since TryParse returns a string, we can simplify our if condition a bit
             if (char.TryParse("T", out var letter))
             {
                 // We know that letter will be the char 'T'

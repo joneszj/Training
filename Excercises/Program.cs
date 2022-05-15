@@ -16,6 +16,11 @@
             //    game ends when either all 3 monsters are defeated, of the pokemans hp is reduced to 0. present a game over or victory text at the end
 
             // In all, provide input validation, and exception handling
+
+            // create/declare a variable and give it a value
+            int myNumber;
+            myNumber = 0;
+            var myString = "hello";
         }
     }
 }
