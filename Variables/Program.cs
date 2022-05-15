@@ -8,7 +8,7 @@ namespace Variables
         {
             #region Declaration, Initialization, Assignment
             // Variables are simply a way of storing in memory, application state
-            // All variables require a type, unless they are dynamic
+            // All variables require a type, unless they are dynamic (covered much later)
             int myNumber = 1;
             // Above, we declare the variable type (int), give the variable a name (myNumber), and initialize it with a value (1)
             // We can also declare uninitialized variables if we want to provide a value later
@@ -19,7 +19,7 @@ namespace Variables
 
             // We can also shorthand variable declaration by using the 'var' keyword
             var myNumber3 = 1;
-            // 'var' does not mean that variable can be reassigned to any type. The compiler simply examins the assignment and determines the type for us
+            // 'var' does not mean that variable can be reassigned to any type. The compiler simply examines the assignment and determines the type for us
             // This is whay 'var' must be initialized, or you will have a compiler warning
             // var someVariable; // <- this is invalid, the type must be known
 
