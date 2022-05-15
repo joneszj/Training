@@ -31,27 +31,55 @@ namespace FindVowel
                     aCount = eCount = iCount = oCount = uCount = 0;
                     foreach (var letter in Console.ReadLine())
                     {
-                        if (char.ToLower(letter) == 'a') aCount++;
-                        if (char.ToLower(letter) == 'e') eCount++;
-                        if (char.ToLower(letter) == 'i') iCount++;
-                        if (char.ToLower(letter) == 'o') oCount++;
-                        if (char.ToLower(letter) == 'u') uCount++;
+                        switch (char.ToLower(letter))
+                        {
+                            case 'a':
+                                aCount++;
+                                break;
+                            case 'e':
+                                eCount++;
+                                break;
+                            case 'i':
+                                iCount++;
+                                break;
+                            case 'o':
+                                oCount++;
+                                break;
+                            case 'u':
+                                uCount++;
+                                break;
+                        }
                     }
 
                     var result = "";
                     // hard to read? readability is almost always more important!
-                    //result = $"{(a != 0 ? $"a:{a}" : string.Empty)}, " +
-                    //    $"{(e != 0 ? $"e:{e}" : string.Empty)}, " +
-                    //    $"{(i != 0 ? $"i:{i}" : string.Empty)}, " +
-                    //    $"{(o != 0 ? $"o:{o}" : string.Empty)}, " +
-                    //    $"{(u != 0 ? $"o:{u}" : string.Empty)}";
+                    //result = $"{(aCount != 0 ? $"a:{aCount}" : string.Empty)}, " +
+                    //    $"{(eCount != 0 ? $"e:{eCount}" : string.Empty)}, " +
+                    //    $"{(iCount != 0 ? $"i:{iCount}" : string.Empty)}, " +
+                    //    $"{(oCount != 0 ? $"o:{oCount}" : string.Empty)}, " +
+                    //    $"{(uCount != 0 ? $"o:{uCount}" : string.Empty)}";
 
                     // easier to read
-                    if (aCount > 0) result += $"a:{aCount} ";
-                    if (eCount > 0) result += $"e:{eCount} ";
-                    if (iCount > 0) result += $"i:{iCount} ";
-                    if (oCount > 0) result += $"o:{oCount} ";
-                    if (uCount > 0) result += $"u:{uCount} ";
+                    if (aCount > 0)
+                    {
+                        result += $"a:{aCount} ";
+                    }
+                    else if (eCount > 0)
+                    {
+                        result += $"e:{eCount} ";
+                    }
+                    else if (iCount > 0)
+                    {
+                        result += $"i:{iCount} ";
+                    }
+                    else if (oCount > 0)
+                    {
+                        result += $"o:{oCount} ";
+                    }
+                    else if (uCount > 0)
+                    {
+                        result += $"u:{uCount} ";
+                    }
 
                     Console.WriteLine(result);
                     Console.WriteLine("Continue?");
