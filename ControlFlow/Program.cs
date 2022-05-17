@@ -104,9 +104,9 @@ namespace ControlFlow
                 // will run
             }
             // > greater than - left is greater than the right
-            // > greater than or equal to - left is greater than or equal to the right
+            // >= greater than or equal to - left is greater than or equal to the right
             // < less than - left is less than the right
-            // < less than or equal to - left is less than or equal to the right
+            // <= less than or equal to - left is less than or equal to the right
             // ! not (will return the opposite bool value)
             #endregion
 

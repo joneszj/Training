@@ -103,11 +103,11 @@ namespace Variables
             // Types themselves also have helpful methods that we can use, called static methods
             // We can access these with a period after the type name
             var isEmpty = string.IsNullOrEmpty(userName);
-            
+
             // string.IsNullOrEmpty(string) is a static method on the string type
             // it will return a bool indicating if the passed string is null or empty (to it will return true or false)
             // Thus, the variable isEmpty is of type bool
-            
+
             // Though static methods are on types, not variables, often they are needed when working with variables
             // Static methods and Instanced methods will be covered in more detail later
             #endregion

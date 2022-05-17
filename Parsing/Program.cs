@@ -6,7 +6,7 @@ namespace Parsing
     {
         static void Main(string[] args)
         {
-            // Pasring is simply a means of extracting a value of a non-string type, from a string
+            // Parsing is simply a means of extracting a value of a non-string type, from a string
 
             #region Parse
             int parseAsInt = int.Parse("12345");
