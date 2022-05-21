@@ -17,7 +17,7 @@ namespace SimpleMathQuiz
                 do
                 {
                     var questions = new string[] { "5 + 5?", "10 + 10?", "10 / 1", "20 * 4", "10 * 13" };
-                    var answers = new int[] { 10, 20, 1, 80, 130 };
+                    var answers = new int[] { 5 + 5, 10 + 10, 10 / 1, 20 * 4, 10 * 13 };
                     int correct = 0;
                     for (int i = 0; i < questions.Length; i++)
                     {

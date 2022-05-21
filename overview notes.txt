@@ -52,8 +52,9 @@ Console: WriteLine, ReadLine, ReadKey
 							for loops are optimal when the termination expression can be determined from the code
 
 	***collections
-		arrays * 		- a fixed typed collection or sequence of typed values
-		list<t>			- a non-fixed typed collection or sequence of typed values
+		arrays * 		- a fixed, mutable typed collection or sequence of typed values
+							- only real reason to use arrays are: performance, and an indexer
+		list<t>			- a non-fixed (flexible), mutable typed collection or sequence of typed values
 
 		***enumeration
 		ienumerable		- anything that can be enumerated using an iterator

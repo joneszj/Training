@@ -68,7 +68,7 @@ namespace GenericCollections
             Console.WriteLine("groceryList");
             for (int i = 0; i < groceryList.Length; i++)
             {
-                Console.WriteLine($"{i}. {groceryList}");
+                Console.WriteLine($"{i}. {groceryList[i]}");
             }
 
             // we can do the same in reverse
@@ -76,7 +76,13 @@ namespace GenericCollections
             Console.WriteLine("\ngroceryList reversed");
             for (int i = groceryList.Length - 1; i >= 0; i--)
             {
-                Console.WriteLine($"{i}. {groceryList}");
+                Console.WriteLine($"{i}. {groceryList[i]}");
+            }
+
+            var myBoolArray = new bool[] { false, true, true, true, false, false, true, false };
+            for (int i = 0; i < myBoolArray.Length; i++)
+            {
+                Console.WriteLine(myBoolArray[i]);
             }
 
             // Just because we can't add or remove indexes from the array, doesn't mean we can assign existing positions new values
@@ -95,6 +101,19 @@ namespace GenericCollections
             {
                 crazyIntArray[i] = crazyIntArray[i] * 10;
                 Console.WriteLine(crazyIntArray[i]);
+            }
+
+            var secondCrazyIntArray = new int[25];
+            for (int i = 0; i < crazyIntArray.Length; i++)
+            {
+                secondCrazyIntArray[i] = crazyIntArray[i];
+            }
+            secondCrazyIntArray[21] = 1000;
+
+            var thirdCrazyIntArray = new int[5];
+            for (int i = 0; i < thirdCrazyIntArray.Length; i++)
+            {
+                thirdCrazyIntArray[i] = crazyIntArray[i];
             }
 
             // An array can be single-dimensional, multidimensional or jagged.
@@ -187,13 +206,18 @@ namespace GenericCollections
             // sorting is also easy with base data types
             daysOfTheWeek.Sort();
 
-            var months = new List<string> { };
+            var months = new List<string>();
             // We can even add many values to a list at once
             months.AddRange(new string[] { "Jan", "Feb", "Mar", "Apr", "Jun" });
             months.AddRange(new List<string> { "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" });
             // Notice we can add an array, or a list for AddRange, this is because both arrays and lists implement an interface call IEnumerable
             // We will cover interfaces later, but for now, we can say that arrays and lists are collections that implement IEnumberable
             // List has no static members. All state/behavior exists on instances of List
+
+            var randomNumbers = new List<int>();
+            randomNumbers.Add(13);
+            var numbers = new int[] { 1, 2, 3 };
+            randomNumbers.AddRange(numbers);
             #endregion
 
             #region Generic Dictionaries
@@ -233,6 +257,15 @@ namespace GenericCollections
 
             #region Deep Dive
             // Performance considerations: https://stackoverflow.com/questions/365615/in-net-which-loop-runs-faster-for-or-foreach/365658#365658
+            #endregion
+
+            #region Practice
+            /*
+             Using arrays, initialize the calendar months, and print them to the console (hint: for loop)
+             Using arrays, initialize the hours of the day from 1-24, and print them in descending order (hint: reverse for loop)
+             Using lists, create a shopping list that the user can add to. After each item added, print the entire list sorted alphabetically (hint: foreach, .Add(), .Sort())
+             Usings lists, create a calendar of months Jan-Jun, but then use .AddRange() to add the remaining months in one line (hint: .AddRange())
+             */
             #endregion
 
             #region Array Regrets

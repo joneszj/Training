@@ -90,6 +90,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Kendo", "01 Kendo", "{88122811-2298-4097-AA04-25D9024C9811}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 AutoMapper", "02 AutoMapper", "{14E56B24-8C17-49F3-BCCF-4EE910AA7366}"
+	ProjectSection(SolutionItems) = preProject
+		AutoMapper.txt = AutoMapper.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13 Patterns", "13 Patterns", "{6D2C7BA8-DC5B-4496-806F-6B0B40E7FB0B}"
 EndProject
@@ -198,8 +201,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 DOM and BOM", "01 DOM and BOM", "{EDD8C2AC-C92F-4EFA-ABDF-4F6EF5C91FF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Castle", "05 Castle", "{D2EB2781-945B-40DD-81CC-E6FAE6284D40}"
+	ProjectSection(SolutionItems) = preProject
+		Castle.txt = Castle.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Swagger", "06 Swagger", "{6C63B841-A5EF-44BD-B119-04FC00502660}"
+	ProjectSection(SolutionItems) = preProject
+		Swagger.txt = Swagger.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Generic Repository", "04 Generic Repository", "{492C9B06-A9D0-4730-BDC7-E3E970F79A16}"
 EndProject
@@ -227,26 +236,45 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.csproj", "{D308DF55-25B4-4609-AC12-136B78FE6913}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Github Copilot", "07 Github Copilot", "{02274706-8645-4522-A1CB-17FA2F547BD9}"
+	ProjectSection(SolutionItems) = preProject
+		Github Copilot.txt = Github Copilot.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 EF BulkExtensions", "08 EF BulkExtensions", "{5682FA7F-A364-40EE-AB40-FD8B8EDD1AE1}"
+	ProjectSection(SolutionItems) = preProject
+		EF BulkExtensions.txt = EF BulkExtensions.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 Humanizer", "09 Humanizer", "{FCEB24F4-E822-4E92-AE37-19A112B646E3}"
+	ProjectSection(SolutionItems) = preProject
+		Humanizer.txt = Humanizer.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Git", "01 Git", "{C8FD14B6-97BA-4B3D-BDCD-4D2682EC4757}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 CSS", "02 CSS", "{8C7F73A9-DBED-48EB-9A67-7763D7C97318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{5992A3D5-D4AB-4D8D-9880-07800A8D457B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "MVC\MVC.csproj", "{5992A3D5-D4AB-4D8D-9880-07800A8D457B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{C1B2C5A9-0CED-4ED2-8102-10A46C4705C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{C1B2C5A9-0CED-4ED2-8102-10A46C4705C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pages", "Pages\Pages.csproj", "{8CA82C7C-5B04-446E-8840-644F93AFAE95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pages", "Pages\Pages.csproj", "{8CA82C7C-5B04-446E-8840-644F93AFAE95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWA", "BlazorWA\BlazorWA.csproj", "{F4DFC5B2-A6FC-42C1-AFFC-5EA5BB845B80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWA", "BlazorWA\BlazorWA.csproj", "{F4DFC5B2-A6FC-42C1-AFFC-5EA5BB845B80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{D1B364B2-339C-45E6-AEE7-84EE0A27486A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{D1B364B2-339C-45E6-AEE7-84EE0A27486A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular", "Angular\Angular.csproj", "{2EFF1702-D178-46A2-B91E-D62A55EFC442}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Angular", "Angular\Angular.csproj", "{2EFF1702-D178-46A2-B91E-D62A55EFC442}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Optional", "10 Optional", "{DEB12198-8A10-411F-A538-D9EA14A62637}"
+	ProjectSection(SolutionItems) = preProject
+		Optional.txt = Optional.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 NSwag", "11 NSwag", "{A37ED622-97AD-43E3-AF20-E1EB91329E5C}"
+	ProjectSection(SolutionItems) = preProject
+		NSwag.txt = NSwag.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -606,6 +634,8 @@ Global
 		{F4DFC5B2-A6FC-42C1-AFFC-5EA5BB845B80} = {BCB105DD-F410-4B8B-88A8-C4C999E39E4D}
 		{D1B364B2-339C-45E6-AEE7-84EE0A27486A} = {BCB105DD-F410-4B8B-88A8-C4C999E39E4D}
 		{2EFF1702-D178-46A2-B91E-D62A55EFC442} = {0B4B2412-09D7-47FF-909E-60238361B57D}
+		{DEB12198-8A10-411F-A538-D9EA14A62637} = {E33F782A-3098-483F-A557-88B490920436}
+		{A37ED622-97AD-43E3-AF20-E1EB91329E5C} = {E33F782A-3098-483F-A557-88B490920436}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3924855-373B-4CBC-92B3-C4791775D7BD}
