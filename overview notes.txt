@@ -55,8 +55,9 @@ Console: WriteLine, ReadLine, ReadKey
 		arrays * 		- a fixed, mutable typed collection or sequence of typed values
 							- only real reason to use arrays are: performance, and an indexer
 		list<t>			- a non-fixed (flexible), mutable typed collection or sequence of typed values
+							- common List members: .Count, .Contains, .Add, .AddRange, .Remove, .Sort, .Reverse, 
 
-		***enumeration
+	***enumeration
 		ienumerable		- anything that can be enumerated using an iterator
 		foreach			- enumerates over an ienumerable
 

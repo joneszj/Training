@@ -276,6 +276,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 NSwag", "11 NSwag", "{A3
 		NSwag.txt = NSwag.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12 Hangfire", "12 Hangfire", "{29676260-C406-4E0F-83FC-0E90EC79951A}"
+	ProjectSection(SolutionItems) = preProject
+		Hangfire.txt = Hangfire.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13 Moq", "13 Moq", "{105BCBA4-C924-42EB-9406-70BE22BDDE5D}"
+	ProjectSection(SolutionItems) = preProject
+		Moq.txt = Moq.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_ConsoleTodo", "ConsoleTodo\12_ConsoleTodo.csproj", "{D67D3AA6-954C-4E55-88AD-052508D79D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundamentalsPatterns", "FundamentalsPatterns\FundamentalsPatterns.csproj", "{BED0DF47-9473-4668-A380-4949C08E24BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -522,6 +536,14 @@ Global
 		{2EFF1702-D178-46A2-B91E-D62A55EFC442}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EFF1702-D178-46A2-B91E-D62A55EFC442}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EFF1702-D178-46A2-B91E-D62A55EFC442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D67D3AA6-954C-4E55-88AD-052508D79D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67D3AA6-954C-4E55-88AD-052508D79D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67D3AA6-954C-4E55-88AD-052508D79D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67D3AA6-954C-4E55-88AD-052508D79D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED0DF47-9473-4668-A380-4949C08E24BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED0DF47-9473-4668-A380-4949C08E24BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED0DF47-9473-4668-A380-4949C08E24BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED0DF47-9473-4668-A380-4949C08E24BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -636,6 +658,10 @@ Global
 		{2EFF1702-D178-46A2-B91E-D62A55EFC442} = {0B4B2412-09D7-47FF-909E-60238361B57D}
 		{DEB12198-8A10-411F-A538-D9EA14A62637} = {E33F782A-3098-483F-A557-88B490920436}
 		{A37ED622-97AD-43E3-AF20-E1EB91329E5C} = {E33F782A-3098-483F-A557-88B490920436}
+		{29676260-C406-4E0F-83FC-0E90EC79951A} = {E33F782A-3098-483F-A557-88B490920436}
+		{105BCBA4-C924-42EB-9406-70BE22BDDE5D} = {E33F782A-3098-483F-A557-88B490920436}
+		{D67D3AA6-954C-4E55-88AD-052508D79D30} = {6FB533AF-5F06-4D75-8A71-459C6936DAFE}
+		{BED0DF47-9473-4668-A380-4949C08E24BE} = {608E01CE-94FD-475B-B95D-EF0B50F4B5EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3924855-373B-4CBC-92B3-C4791775D7BD}

@@ -261,10 +261,11 @@ namespace GenericCollections
 
             #region Practice
             /*
-             Using arrays, initialize the calendar months, and print them to the console (hint: for loop)
-             Using arrays, initialize the hours of the day from 1-24, and print them in descending order (hint: reverse for loop)
-             Using lists, create a shopping list that the user can add to. After each item added, print the entire list sorted alphabetically (hint: foreach, .Add(), .Sort())
-             Usings lists, create a calendar of months Jan-Jun, but then use .AddRange() to add the remaining months in one line (hint: .AddRange())
+            Using arrays, initialize the calendar months, and print them to the console (hint: for loop)
+            Using arrays, initialize the hours of the day from 1-24, and print them in descending order (hint: reverse for loop)
+            Using lists, create a shopping list that the user can add to. After each item added, print the entire list sorted alphabetically (hint: foreach, .Add(), .Sort())
+            - Using the same list, if the user enters an item that already exists, remove that item (hint: .Remove())
+            Usings lists, create a calendar of months Jan-Jun, but then use .AddRange() to add the remaining months in one line (hint: .AddRange())
              */
             #endregion
 
