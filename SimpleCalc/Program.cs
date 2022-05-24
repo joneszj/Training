@@ -27,7 +27,7 @@ namespace SimpleCalc
                         {
                             isFloat1 = float.TryParse(Console.ReadLine(), out number1);
                             if (!isFloat1) Console.WriteLine("Invalid number. Try again.");
-                        } while (isFloat1);
+                        } while (!isFloat1);
                     }
 
                     // get operator
@@ -41,7 +41,7 @@ namespace SimpleCalc
                     {
                         isFloat2 = float.TryParse(Console.ReadLine(), out number2);
                         if (!isFloat2) Console.WriteLine("Invalid number. Try again.");
-                    } while (isFloat2);
+                    } while (!isFloat2);
 
                     // calculate
                     switch (operatorKey)

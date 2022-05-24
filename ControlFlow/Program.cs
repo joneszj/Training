@@ -11,6 +11,8 @@ namespace ControlFlow
             // The two main means of control flow are switch and if/else statements
             // There are others, but for now, these are fundamental
 
+            // https://www.w3schools.com/cs/cs_conditions.php
+
             #region Switch
             // A switch statement does what it sounds like, switches where the code will run if certain cases are true
             // To build a switch, we use the 'switch' keyword, followed by thing that we will switch on (thing)

@@ -20,6 +20,7 @@ catch (Exception ex)
 bool exit; // <- control variable, bool defaults to false
 do
 {
+    // wrapped code
     Console.WriteLine("Exit?");
     exit = Console.ReadKey().Key == ConsoleKey.Y;
 } while (!exit);
@@ -73,7 +74,7 @@ do
     Console.WriteLine("What is 10 + 10?");
     answerAsString2 = Console.ReadLine() ?? string.Empty;
     isNotAnInt = int.TryParse(answerAsString2, out var answerAsInt2);
-} while (true);
+} while (!isNotAnInt);
 
 if (answerAsInt == 10 + 10)
 {

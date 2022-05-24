@@ -10,6 +10,7 @@ namespace CastConvert
             // So, parsing is really used against strings
             // https://exceptionnotfound.net/csharp-in-simple-terms-3-casting-conversion-parsing-is-as-and-typeof/
             // https://stackoverflow.com/a/15395832/3700826
+            // https://www.w3schools.com/cs/cs_type_casting.php
 
             #region Cast
             // Casting will attempt to force one type into another
