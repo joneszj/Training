@@ -92,6 +92,7 @@ do
             Console.WriteLine();
         }
 
+        // check for winner to break player loop
         if (winner != default)
         {
             break;
