@@ -17,6 +17,7 @@
                     userInputItem = Console.ReadLine() ?? string.Empty;
                 } while (string.IsNullOrWhiteSpace(userInputItem));
 
+                // Add the item to the list
                 toDoList.Add(userInputItem);
                 break;
             case ConsoleKey.R:
