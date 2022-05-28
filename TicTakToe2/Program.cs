@@ -40,6 +40,13 @@ do
                 continue;
             }
             row--;
+            // validate row is in bounds
+            if (row < 0 || row > 3)
+            {
+                Console.WriteLine("Invalid input. Try again.");
+                continue;
+            }
+
             Console.Write("Enter column: ");
             // validate column is an int
             if (!int.TryParse(Console.ReadLine()!, out column))
@@ -48,9 +55,8 @@ do
                 continue;
             }
             column--;
-
-            // validate row and column are in bounds
-            if (row < 0 || column < 0 || row > 3 || column > 3)
+            // validate column is in bounds
+            if (column < 0 || column > 3)
             {
                 Console.WriteLine("Invalid input. Try again.");
                 continue;
