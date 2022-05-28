@@ -65,6 +65,9 @@ Console: WriteLine, ReadLine, ReadKey
 	***exceptions
 		try/catch		- 
 		finally			- 
+		
+	***debugging
+		breakpoints		-
 
 	***linq
 		linq			- functional style of programming with ienumerables
