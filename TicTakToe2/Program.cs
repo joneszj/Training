@@ -33,6 +33,7 @@ do
             // player turn
             Console.WriteLine("Player " + players[z] + "'s turn.");
             Console.Write("Enter row: ");
+            // validate row is an int
             if (!int.TryParse(Console.ReadLine()!, out row))
             {
                 Console.WriteLine("Invalid input. Try again.");
@@ -40,16 +41,27 @@ do
             }
             row--;
             Console.Write("Enter column: ");
+            // validate column is an int
             if (!int.TryParse(Console.ReadLine()!, out column))
             {
                 Console.WriteLine("Invalid input. Try again.");
                 continue;
             }
             column--;
+
+            // validate row and column are in bounds
+            if (row < 0 || column < 0 || row > 3 || column > 3)
+            {
+                Console.WriteLine("Invalid input. Try again.");
+                continue;
+            }
+
+            // validate space is empty
             if (game[row, column] == '*')
             {
                 game[row, column] = players[z];
                 invalid = false;
+                
                 // check for winner
                 if (game[0, 0] == game[0, 1] && game[0, 1] == game[0, 2] && game[0, 0] != '*'
                     || game[1, 0] == game[1, 1] && game[1, 1] == game[1, 2] && game[1, 0] != '*'
